@@ -16,6 +16,8 @@
 		50E51ACF164DA49E004E5C2F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51ACE164DA49E004E5C2F /* Default.png */; };
 		50E51AD1164DA49E004E5C2F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51AD0164DA49E004E5C2F /* Default@2x.png */; };
 		50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51AD2164DA49E004E5C2F /* Default-568h@2x.png */; };
+		68C83302164DAD67002C778A /* HWEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C83300164DAD67002C778A /* HWEventViewController.m */; };
+		68C83303164DAD67002C778A /* HWEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68C83301164DAD67002C778A /* HWEventViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		50E51ACE164DA49E004E5C2F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50E51AD0164DA49E004E5C2F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		50E51AD2164DA49E004E5C2F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		68C832FF164DAD67002C778A /* HWEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEventViewController.h; sourceTree = "<group>"; };
+		68C83300164DAD67002C778A /* HWEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEventViewController.m; sourceTree = "<group>"; };
+		68C83301164DAD67002C778A /* HWEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEventViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,7 @@
 		50E51AC2164DA49E004E5C2F /* HackWro */ = {
 			isa = PBXGroup;
 			children = (
+				68C832FD164DAD67002C778A /* ViewControllers */,
 				50E51ACB164DA49E004E5C2F /* HWAppDelegate.h */,
 				50E51ACC164DA49E004E5C2F /* HWAppDelegate.m */,
 				50E51AC3164DA49E004E5C2F /* Supporting Files */,
@@ -97,6 +103,24 @@
 				50E51AD2164DA49E004E5C2F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68C832FD164DAD67002C778A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				68C832FE164DAD67002C778A /* HWEventViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		68C832FE164DAD67002C778A /* HWEventViewController */ = {
+			isa = PBXGroup;
+			children = (
+				68C832FF164DAD67002C778A /* HWEventViewController.h */,
+				68C83300164DAD67002C778A /* HWEventViewController.m */,
+				68C83301164DAD67002C778A /* HWEventViewController.xib */,
+			);
+			path = HWEventViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +179,7 @@
 				50E51ACF164DA49E004E5C2F /* Default.png in Resources */,
 				50E51AD1164DA49E004E5C2F /* Default@2x.png in Resources */,
 				50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */,
+				68C83303164DAD67002C778A /* HWEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +192,7 @@
 			files = (
 				50E51AC9164DA49E004E5C2F /* main.m in Sources */,
 				50E51ACD164DA49E004E5C2F /* HWAppDelegate.m in Sources */,
+				68C83302164DAD67002C778A /* HWEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +301,7 @@
 				50E51AD8164DA49E004E5C2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
