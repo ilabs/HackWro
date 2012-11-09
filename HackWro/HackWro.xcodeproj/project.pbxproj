@@ -18,6 +18,7 @@
 		50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51AD2164DA49E004E5C2F /* Default-568h@2x.png */; };
 		68C83302164DAD67002C778A /* HWEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C83300164DAD67002C778A /* HWEventViewController.m */; };
 		68C83303164DAD67002C778A /* HWEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68C83301164DAD67002C778A /* HWEventViewController.xib */; };
+		68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8330D164DB0B3002C778A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		68C832FF164DAD67002C778A /* HWEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEventViewController.h; sourceTree = "<group>"; };
 		68C83300164DAD67002C778A /* HWEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEventViewController.m; sourceTree = "<group>"; };
 		68C83301164DAD67002C778A /* HWEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEventViewController.xib; sourceTree = "<group>"; };
+		68C8330D164DB0B3002C778A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */,
 				50E51ABD164DA49E004E5C2F /* UIKit.framework in Frameworks */,
 				50E51ABF164DA49E004E5C2F /* Foundation.framework in Frameworks */,
 				50E51AC1164DA49E004E5C2F /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +59,7 @@
 		50E51AAD164DA49E004E5C2F = {
 			isa = PBXGroup;
 			children = (
+				68C8330D164DB0B3002C778A /* CoreLocation.framework */,
 				50E51AC2164DA49E004E5C2F /* HackWro */,
 				50E51ABB164DA49E004E5C2F /* Frameworks */,
 				50E51AB9164DA49E004E5C2F /* Products */,

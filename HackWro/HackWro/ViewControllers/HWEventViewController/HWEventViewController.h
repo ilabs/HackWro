@@ -23,10 +23,13 @@
 @property (nonatomic, strong) IBOutlet UIWebView *popupWebView;
 
 @property (nonatomic, strong) IBOutlet UIView *popupView;
+@property (nonatomic, strong) IBOutlet UIView *failView;
 
-- (void)startTimer;
+- (void)startTimer:(NSTimeInterval)timeLeft;
 - (IBAction)showMap:(id)sender;
 - (IBAction)hidePopup:(id)sender;
 
 - (IBAction)showPopup:(id)sender;
+- (IBAction)questFailed:(id)sender;
+- (IBAction)questFailedConfirmed:(id)sender;
 @end

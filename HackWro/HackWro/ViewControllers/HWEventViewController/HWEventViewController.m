@@ -36,6 +36,9 @@
     self.popupWebView.opaque = NO;
     [self hideSubviewsBackground:self.popupWebView];
     [self hideSubviewsBackground:self.webView];
+    
+    // test
+    [self startTimer:10];
 }
 
 - (void)hideSubviewsBackground:(UIView*)mainView {
@@ -51,14 +54,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)startTimer {
-    finishDate = [NSDate date]; // to do, add time!
-    timer = [[NSTimer alloc] initWithFireDate:[NSDate date] interval:0 target:self selector:@selector(timerUpdate:) userInfo:nil repeats:NO];
-    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+- (void)startTimer:(NSTimeInterval)timeLeft {
+    if (timeLeft > 0.0) {
+        finishDate = [NSDate dateWithTimeIntervalSinceNow:timeLeft]; // to do, add time!
+        timer = [[NSTimer alloc] initWithFireDate:[NSDate date] interval:1.0 target:self selector:@selector(timerUpdate:) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    } else {
+        self.timeLabel.text = @"Nieograniczony";
+    }
 }
 
 - (void)timerUpdate:(NSNotification*)notif {
-    self.timeLabel.text = [self stringWithTimeInterval:[finishDate timeIntervalSinceNow]];
+    if ([finishDate timeIntervalSinceNow] <= 0.0) {
+        [timer invalidate];
+        [self questFailed:nil];
+    } else
+        self.timeLabel.text = [self stringWithTimeInterval:[finishDate timeIntervalSinceNow]];
 }
 
 - (NSString*)stringWithTimeInterval:(NSTimeInterval)interval {
@@ -100,6 +111,23 @@
     [self.view addSubview:self.popupView];
     [UIView animateWithDuration:0.5 animations:^{
         self.popupView.alpha = 1.0;
+    }];
+}
+
+- (IBAction)questFailed:(id)sender {
+    self.failView.frame = self.view.bounds;
+    self.failView.alpha = 0.0;
+    [self.view addSubview:self.failView];
+    [UIView animateWithDuration:0.5 animations:^{
+        self.failView.alpha = 1.0;
+    }];
+}
+
+- (IBAction)questFailedConfirmed:(id)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        self.failView.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [self.failView removeFromSuperview];
     }];
 }
 
