@@ -7,6 +7,7 @@
 //
 
 #import "HWStatisticsViewController.h"
+#import "Scenario.h"
 
 @interface HWStatisticsViewController ()
 
@@ -36,9 +37,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void) userFinishedTasks:(NSArray *)noTasks inTimes:(NSArray *)Times
+- (void) userFinishedTasks:(Scenario *)task
 {
-    NSLog(@"Uzytkownik ukonczyl %@ zadania w czasie %@",noTasks,Times);
+    NSLog(@"Uzytkownik ukonczyl %@ zadania w czasie",task);
     
 }
 
@@ -46,11 +47,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void) goBack
-{
-    
 }
 
 @end
