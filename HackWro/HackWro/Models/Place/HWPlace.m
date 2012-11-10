@@ -15,8 +15,7 @@
 @synthesize thumbnail = _thumbnail;
 @synthesize location = _location;
 @synthesize address = _address;
-@synthesize lat = _lat;
-@synthesize lon = _lon;
+
 
 -(void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.subtitle forKey:@"subtitle"];
@@ -25,8 +24,7 @@
     [aCoder encodeObject:UIImageJPEGRepresentation(self.thumbnail, 1.0f) forKey:@"thumbnail"];
     [aCoder encodeDouble:self.location.coordinate.latitude forKey:@"latitude"];
     [aCoder encodeDouble:self.location.coordinate.longitude forKey:@"longitude"];
-    [aCoder encodeObject:self.lat forKey:@"lat"];
-    [aCoder encodeObject:self.lon forKey:@"lon"];
+
 }
 
 -(id)initWithCoder:(NSCoder *)aDecoder {
@@ -36,8 +34,6 @@
         self.subtitle = [aDecoder decodeObjectForKey:@"subtitle"];
         self.address = [aDecoder decodeObjectForKey:@"address"];
         self.thumbnail = [UIImage imageWithData:[aDecoder decodeObjectForKey:@"thumbnail"]];
-        self.lat = [aDecoder decodeObjectForKey:@"lat"];
-        self.lon = [aDecoder decodeObjectForKey:@"lon"];
     }
     return self;
 }

@@ -54,8 +54,7 @@ static float maxLat;
     for(int i = 0; i < [self.points count]; i++) {
         HWPlace *place = [[HWPlace alloc] init];
         place = [self.points objectAtIndex:i];
-        CLLocationCoordinate2D coordinate2D = CLLocationCoordinate2DMake([place.lat floatValue], [place.lon floatValue]);
-        MyLocation *pin = [[MyLocation alloc] initWithName:place.name address:place.address coordinate:coordinate2D identyfier:[NSNumber numberWithInt:i]];
+        MyLocation *pin = [[MyLocation alloc] initWithName:place.name address:place.address coordinate:place.location.coordinate identyfier:[NSNumber numberWithInt:i]];
         
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
@@ -71,15 +70,13 @@ static float maxLat;
     if([self.points count] > 0) {
         for(int i = 0; i < [self.points count]; i++) {
             HWPlace *place = [self.points objectAtIndex:i];
-            CLLocationCoordinate2D location; 
-            location.latitude = [place.lat floatValue];
-            location.longitude = [place.lon floatValue];
-            NSLog(@"lon %f", location.longitude);
-            NSLog(@"lat %f", location.latitude);
-            minLat = MIN(minLat, location.latitude);
-            minLon = MIN(minLon, location.longitude);
-            maxLat = MAX(maxLat, location.latitude);
-            maxLon = MAX(maxLon, location.longitude);
+
+            NSLog(@"lon %f", place.location.coordinate.longitude);
+            NSLog(@"lat %f", place.location.coordinate.latitude);
+            minLat = MIN(minLat, place.location.coordinate.latitude);
+            minLon = MIN(minLon, place.location.coordinate.longitude);
+            maxLat = MAX(maxLat, place.location.coordinate.latitude);
+            maxLon = MAX(maxLon, place.location.coordinate.longitude);
         }
         MKCoordinateRegion region; 
         MKCoordinateSpan span; 
@@ -110,6 +107,7 @@ static float maxLat;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"points: %@", [self.points[0] location]);
     [self generateAnnotation];
     [self zoomAndFit];
     //[self zoomAndFit];

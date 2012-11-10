@@ -21,5 +21,6 @@ typedef struct {
 
 @property (nonatomic, strong) Event *reachEvent;
 @property (assign) LocationCoordinates coordinates;
+@property (nonatomic, strong) NSString *title;
 
 @end
