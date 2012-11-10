@@ -35,10 +35,20 @@
 {
     // Return the number of rows in the section.
     if(section==0){
-        return [objectives count];
+        return [objectives count]+1;
     }else{
         return 1;
     }
+}
+
+- (float) sumTimes {
+    float sum=0;
+    for(int i=0; i< [objectives count]; i++){
+        Objective *object = (Objective *)[objectives objectAtIndex:i];
+        sum += object.completionTime;
+    }
+    NSLog(@"suma: %f", sum);
+    return sum;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -46,20 +56,26 @@
     NSString *CellIdentifier = @"HWObjectiveCell";
     NSString *CellNib = @"HWObjectiveCell";
     
-    Objective *object = (Objective *)[objectives objectAtIndex:indexPath.row];
-    
     id cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:CellNib owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
+    
+    if(indexPath.row == [objectives count]){
+        [[cell nameLabel] setText:@"Łączny czas gry"];
+        [[cell timeLabel] setText:[NSString stringWithFormat:@"%4.0f",[self sumTimes]]];
+        return cell;
+    }
+    else {
+    Objective *object = (Objective *)[objectives objectAtIndex:indexPath.row];
    
     [[cell nameLabel] setText:object.title];
-    [[cell timeLabel] setText:[NSString stringWithFormat:@"%f", object.completionTime]];
+    [[cell timeLabel] setText:[NSString stringWithFormat:@"%4.0f", object.completionTime]];
     
     return cell;
+    }
 }
-
 
 
 - (void)viewDidLoad

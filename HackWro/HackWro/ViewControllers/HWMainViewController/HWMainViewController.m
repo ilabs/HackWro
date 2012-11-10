@@ -53,7 +53,6 @@
  
     [self.webView loadHTMLString:scenario.scenarioDescription baseURL:[[NSBundle mainBundle] resourceURL]];
     
-    
 	// Do any additional setup after loading the view.
 }
 
