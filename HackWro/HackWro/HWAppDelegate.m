@@ -12,16 +12,14 @@
 
 @implementation HWAppDelegate
 
+@synthesize window = _window;
+@synthesize mainViewController = _mainViewController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.mainViewController = [[HWMainViewController alloc] initWithNibName:@"HWMainViewController" bundle:nil];
-    
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.mainViewController];
-    
     self.window.rootViewController = nav;
-    
     [self.window makeKeyAndVisible];
     return YES;
 }
