@@ -14,5 +14,6 @@
 
 @property (nonatomic, strong) NSArray *objectives;
 @property (nonatomic, strong) NSString *scenarioDescription;
+@property (nonatomic, strong) NSString *title;
 
 @end

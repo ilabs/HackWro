@@ -14,6 +14,7 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     if((self = [super init])) {
         self.scenarioDescription = [dictionary textObjectForKey:@"description"];
+        self.title = [dictionary textObjectForKey:@"title"];
         
         id objective = [[dictionary objectForKey:@"objectives"] objectForKey:@"objective"];
         NSMutableArray *objectivesArray = [NSMutableArray new];

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <scenario>
 	<description><![CDATA[
-		<h1>80 milionów: skok na bank</h1>
+		 <h1>80 milionów: skok na bank</h1>
 		<div class="image"></div>
 		<div class="description">
-			<p>Wyprowadziliście z banku 80 milionów i musicie je zabezpieczyć.</p>
+		<p> 	Dolny Śląsk, jesień 1981 roku. Po serii prowokacji SB, konfrontacja opozycji z komunistami wydaje się nieunikniona. Tuż przed ogłoszeniem stanu wojennego, młodzi działacze Solidarności postanawiają zagrać va banque i organizują brawurową akcję wyprowadzenia z wrocławskiego banku 80 milionów związkowych pieniędzy, zanim konto zostanie zablokowane. Funkcjonariusze Służby Bezpieczeństwa podążają za nimi krok w krok. Rozpoczyna się pasjonująca rozgrywka, w którą zostają zaangażowani duchowni i... cinkciarze. Każda ze stron ma asy w rękawie.
+		</p>
+        <p>Wcielasz się w działaczy Solidarności. Właśnie wyprowadziliście z banku 80 milionów i musicie je zabezpieczyć.</p>
+		</div>
 		</div>
 	]]></description>
+    <title>80 milionów</title>
+    
 	<objectives>
 		<objective>
 			<time_limit>0</time_limit>

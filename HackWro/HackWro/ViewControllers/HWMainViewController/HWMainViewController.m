@@ -46,14 +46,12 @@
     
     Scenario *scenario = [scenarioManager loadScenario:[[NSBundle mainBundle] pathForResource:@"miliony" ofType:@"xml"]];
     
-    
     // load navigationBar
-    self.navigationController.navigationBar.topItem.title = @"Nazwa";
+    self.navigationController.navigationBar.topItem.title = scenario.title;
     self.navigationController.navigationBar.topItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Dalej" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClicked)];
     self.navigationController.navigationBar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonClicked)];
  
     [self.webView loadHTMLString:scenario.scenarioDescription baseURL:[[NSBundle mainBundle] resourceURL]];
-
     
     
 	// Do any additional setup after loading the view.
