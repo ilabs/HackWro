@@ -39,14 +39,31 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.webView.backgroundColor = [UIColor clearColor];
+    self.webView.backgroundColor = [UIColor colorWithWhite:0.961 alpha:1.000];
     self.webView.opaque = YES;
     self.popupWebView.backgroundColor = [UIColor clearColor];
     self.popupWebView.opaque = NO;
     [self hideSubviewsBackground:self.popupWebView];
     [self hideSubviewsBackground:self.webView];
     [self.scenarioManager runScenario];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Mapa" style:UIBarButtonItemStylePlain target:self action:@selector(showMap:)];
+    self.webView.layer.cornerRadius = 5.0;
+    self.webView.layer.borderWidth = 1.0;
+    self.webView.layer.borderColor = [UIColor colorWithWhite:0.209 alpha:1.000].CGColor;
+    self.webView.opaque = NO;
+    self.webView.clipsToBounds = YES;
+    self.webView.frame = CGRectInset(self.webView.frame, 5.0, 5.0);
+    
+    
+}
 
+- (void)viewWillDisappear:(BOOL)animated {
+    self.navigationItem.hidesBackButton = NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationItem.hidesBackButton = YES;
 }
 
 - (void)hideSubviewsBackground:(UIView*)mainView {
@@ -140,8 +157,7 @@
     self.timeLabel.text = @"Nieograniczony";
     currentObjective = objective;
     startDate = [NSDate date];
-    [self.mapButton setTitle:objective.targetLocation.title forState:UIControlStateNormal];
-    
+    self.title = objective.targetLocation.title;
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager didFailWithError:(NSError *)error {

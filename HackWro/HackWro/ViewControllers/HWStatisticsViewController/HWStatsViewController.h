@@ -11,6 +11,7 @@
 @interface HWStatsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     NSArray *objectives;
+
 }
 @property (nonatomic, strong) NSArray *objectives;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andObjectives:(NSArray *)array;
