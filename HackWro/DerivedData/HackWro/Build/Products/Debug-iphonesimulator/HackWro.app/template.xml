@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="1.0" ?>
+<scenario>
+	<objective>
+		<time_limit>0</time_limit>
+		<description><![CDATA[
+			<h1>Znajdz gowno na trawniku!</h1>
+		]]></description>
+		<events>
+			<event type="delayed_message">
+				<delay>10</delay>
+				<content><![CDATA[
+					Idziesz juz 10 sekund!
+				]]></content>
+			</event>
+			<event type="location_message">
+				<location>
+					<location_coordinates>
+						<altitude></altitude>
+						<latitude></latitude>
+						<longitude></longitude>
+					</location_coordinates>
+				</location>
+				<content><![CDATA[
+					Jestes w polowie drogi!
+				]]></content>
+			</event>
+		</events>
+		<target_location>
+			<reach_event type="message">
+				<content><![CDATA[
+					Doszedles do celu!
+				]]></content>
+			</reach_event>
+			<location_coordinates>
+				<altitude></altitude>
+				<latitude></latitude>
+				<longitude></longitude>
+			</location_coordinates>
+		</target_location>
+	</objective>
+	<objective>
+		<time_limit>90</time_limit>
+		<description><![CDATA[
+			<h1>Teraz znadz inne gowno.</h1>
+		]]></description>
+		<events>
+			<event type="location_message">
+				<location>
+					<location_coordinates>
+						<altitude></altitude>
+						<latitude></latitude>
+						<longitude></longitude>
+					</location_coordinates>
+				</location>
+				<content><![CDATA[
+					Jestes jeszcze daleko!
+				]]></content>
+			</event>
+		</events>
+		<target_location>
+			<reach_event type="message">
+				<content><![CDATA[
+					Pozdrawiam.
+				]]></content>
+			</reach_event>
+			<location_coordinates>
+				<altitude></altitude>
+				<latitude></latitude>
+				<longitude></longitude>
+			</location_coordinates>
+		</target_location>
+	</objective>
+	<objective>
+		<time_limit>90</time_limit>
+		<description><![CDATA[
+			<h1>Teraz znadz inne gowno.</h1>
+		]]></description>
+		<events>
+			<event type="location_message">
+				<location>
+					<location_coordinates>
+						<altitude></altitude>
+						<latitude></latitude>
+						<longitude></longitude>
+					</location_coordinates>
+				</location>
+				<content><![CDATA[
+					Jestes jeszcze daleko!
+				]]></content>
+			</event>
+			<event type="delayed_message">
+				<delay>20</delay>
+				<content><![CDATA[
+					Minelo 20 sekund.
+				]]></content>
+			</event>
+		</events>
+		<target_locations>
+			<location>
+				<reach_event type="message">
+					<content><![CDATA[
+						Pozdrawiam 1.
+					]]></content>
+				</reach_event>
+				<location_coordinates>
+					<altitude></altitude>
+					<latitude></latitude>
+					<longitude></longitude>
+				</location_coordinates>
+			</location>
+			<location>
+				<reach_event type="message">
+					<content><![CDATA[
+						Pozdrawiam 2.
+					]]></content>
+				</reach_event>
+				<location_coordinates>
+					<altitude></altitude>
+					<latitude></latitude>
+					<longitude></longitude>
+				</location_coordinates>
+			</location>
+			<location>
+				<reach_event type="message">
+					<content><![CDATA[
+						Pozdrawiam 3.
+					]]></content>
+				</reach_event>
+				<location_coordinates>
+					<altitude></altitude>
+					<latitude></latitude>
+					<longitude></longitude>
+				</location_coordinates>
+			</location>
+		</target_locations>
+	</objective>
+</scenario>

@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class ScenarioManager;
+
 @interface HWMainViewController : UIViewController
+{
+    ScenarioManager*    scenarioManager;
+}
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UILabel *labelText;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
 @end

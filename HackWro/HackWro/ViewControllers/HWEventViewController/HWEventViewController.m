@@ -21,6 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.scenarioManager = manager;
+        self.scenarioManager.delegate = self;
     }
     return self;
 }
@@ -53,6 +54,15 @@
     for (UIView *view in mainView.subviews) {
         view.backgroundColor = [UIColor clearColor];
         view.opaque = NO;
+        if ([view isKindOfClass:[UIScrollView class]]) {
+            for (UIView *view2 in view.subviews)
+                if ([view2 isKindOfClass:[UIImageView class]]) {
+                    view2.hidden = YES;
+                }
+        }
+        if ([view isKindOfClass:[UIImageView class]]) {
+            view.hidden = YES;
+        }
     }
 }
 
@@ -79,9 +89,11 @@
 
 - (IBAction)showMap:(id)sender {
     HWPlace *place = [[HWPlace alloc] init];
-    place.location = [[CLLocation alloc] initWithLatitude:finishLocaton.coordinates.latitude longitude:finishLocaton.coordinates.longitude];
+    place.location = [[CLLocation alloc] initWithLatitude:currentObjective.targetLocation.coordinates.latitude longitude:currentObjective.targetLocation.coordinates.longitude];
     place.name = finishLocaton.title;
     HWMapViewController *mapViewController = [[HWMapViewController alloc] initWithNibName:@"HWMapViewController" bundle:nil];
+    [mapViewController setPoints:@[place]];
+    mapViewController.title = place.name;
     [self.navigationController pushViewController:mapViewController animated:YES];
 }
 
@@ -120,9 +132,7 @@
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager didLoadObjective:(Objective *)objective {
-    [self startTimer:objective.timeLimit];
     [self.webView loadHTMLString:objective.objectiveDescription baseURL:nil];
-    finishLocaton = objective.targetLocation;
     self.timeLabel.font = [UIFont boldSystemFontOfSize:20];
     self.timeLabel.text = @"Nieograniczony";
     currentObjective = objective;
@@ -143,6 +153,7 @@
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager eventOccurred:(Event *)event {
+    [self.navigationController popToViewController:self animated:YES];
     [self.popupWebView loadHTMLString:event.content baseURL:nil];
     [self showPopup:nil];
 }
