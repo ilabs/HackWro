@@ -48,9 +48,9 @@
     
     
     // load navigationBar
-    self.navigationBar.topItem.title = @"Nazwa";
-    self.navigationBar.topItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Dalej" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClicked)];
-    self.navigationBar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonClicked)];
+    self.navigationController.navigationBar.topItem.title = @"Nazwa";
+    self.navigationController.navigationBar.topItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Dalej" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClicked)];
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonClicked)];
  
     [self.webView loadHTMLString:scenario.scenarioDescription baseURL:[[NSBundle mainBundle] resourceURL]];
 
@@ -66,7 +66,6 @@
 }
 
 - (void)viewDidUnload {
-    [self setNavigationBar:nil];
     [self setWebView:nil];
     [super viewDidUnload];
 }
