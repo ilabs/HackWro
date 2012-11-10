@@ -8,4 +8,4 @@ dependencies: \
   /Users/marek/Desktop/finalHackwro/HackWro/HackWro/HackWro/Models/Scenario/Location.h \
   /Users/marek/Desktop/finalHackwro/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWStatisticsViewController.h \
   /Users/marek/Desktop/finalHackwro/HackWro/HackWro/HackWro/ViewControllers/HWMapViewController/HWMapViewController.h \
-  /Users/marek/Desktop/finalHackwro/HackWro/HackWro/HackWro/Models/HWPlace.h
+  /Users/marek/Desktop/finalHackwro/HackWro/HackWro/HackWro/Models/Place/HWPlace.h
