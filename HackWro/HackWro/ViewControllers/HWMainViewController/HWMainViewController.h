@@ -14,7 +14,6 @@
 {
     ScenarioManager*    scenarioManager;
 }
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
