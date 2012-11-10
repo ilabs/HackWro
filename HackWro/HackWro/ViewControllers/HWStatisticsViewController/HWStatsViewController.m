@@ -63,14 +63,14 @@
     
     if(indexPath.row == [objectives count]){
         [[cell nameLabel] setText:@"Łączny czas gry"];
-        [[cell timeLabel] setText:[NSString stringWithFormat:@"%4.0f",[self sumTimes]]];
+        [[cell timeLabel] setText:[NSString stringWithFormat:@"%4.0f s",[self sumTimes]]];
         return cell;
     }
     else {
     Objective *object = (Objective *)[objectives objectAtIndex:indexPath.row];
    
     [[cell nameLabel] setText:object.title];
-    [[cell timeLabel] setText:[NSString stringWithFormat:@"%4.0f", object.completionTime]];
+    [[cell timeLabel] setText:[NSString stringWithFormat:@"%4.0f s", object.completionTime]];
     
     return cell;
     }
