@@ -41,6 +41,7 @@
 		50E51B4A164E93CA004E5C2F /* HWStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B48164E93CA004E5C2F /* HWStatsViewController.xib */; };
 		687AC05E164E79CD00AF6E81 /* HWPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 687AC05D164E79CD00AF6E81 /* HWPlace.m */; };
 		68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8330D164DB0B3002C778A /* CoreLocation.framework */; };
+		68DD80A9164EAD4800CBC4E9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DD80A8164EAD4800CBC4E9 /* QuartzCore.framework */; };
 		DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A11E164E5EB70020E28A /* MyLocation.m */; };
 		EA4B5FE1164E6BD10094DAAB /* HWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4B5FDF164E6BD10094DAAB /* HWMainViewController.m */; };
 		EA4B5FE2164E6BD10094DAAB /* HWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4B5FE0164E6BD10094DAAB /* HWMainViewController.xib */; };
@@ -101,6 +102,7 @@
 		687AC05C164E79CD00AF6E81 /* HWPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPlace.h; sourceTree = "<group>"; };
 		687AC05D164E79CD00AF6E81 /* HWPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPlace.m; sourceTree = "<group>"; };
 		68C8330D164DB0B3002C778A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		68DD80A8164EAD4800CBC4E9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DB77A11D164E5EB70020E28A /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
 		DB77A11E164E5EB70020E28A /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
 		EA4B5FDE164E6BD10094DAAB /* HWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMainViewController.h; sourceTree = "<group>"; };
@@ -113,11 +115,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DD80A9164EAD4800CBC4E9 /* QuartzCore.framework in Frameworks */,
+				50E51AC1164DA49E004E5C2F /* CoreGraphics.framework in Frameworks */,
 				50E51B11164E655E004E5C2F /* MapKit.framework in Frameworks */,
 				68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */,
 				50E51ABD164DA49E004E5C2F /* UIKit.framework in Frameworks */,
 				50E51ABF164DA49E004E5C2F /* Foundation.framework in Frameworks */,
-				50E51AC1164DA49E004E5C2F /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +180,7 @@
 		50E51ABB164DA49E004E5C2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				68DD80A8164EAD4800CBC4E9 /* QuartzCore.framework */,
 				50E51B10164E655E004E5C2F /* MapKit.framework */,
 				68C8330D164DB0B3002C778A /* CoreLocation.framework */,
 				50E51ABC164DA49E004E5C2F /* UIKit.framework */,
