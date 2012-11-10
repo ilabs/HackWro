@@ -59,7 +59,7 @@ static float maxLat;
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
         [dateFormatter setLocale:locale];
-        dateFormatter.dateFormat = @"MMMM dd yyyy";   
+        dateFormatter.dateFormat = @"MMMM dd yyyy";
         
         [pin setAddress:place.address];
         [self.mapView addAnnotation:pin];
@@ -70,7 +70,7 @@ static float maxLat;
     if([self.points count] > 0) {
         for(int i = 0; i < [self.points count]; i++) {
             HWPlace *place = [self.points objectAtIndex:i];
-
+            
             NSLog(@"lon %f", place.location.coordinate.longitude);
             NSLog(@"lat %f", place.location.coordinate.latitude);
             minLat = MIN(minLat, place.location.coordinate.latitude);
@@ -78,20 +78,20 @@ static float maxLat;
             maxLat = MAX(maxLat, place.location.coordinate.latitude);
             maxLon = MAX(maxLon, place.location.coordinate.longitude);
         }
-        MKCoordinateRegion region; 
-        MKCoordinateSpan span; 
-        span.latitudeDelta = 1.2*(maxLat - minLat); 
+        MKCoordinateRegion region;
+        MKCoordinateSpan span;
+        span.latitudeDelta = 1.2*(maxLat - minLat);
         span.longitudeDelta = 1.2*(maxLon - minLon);
         
-        CLLocationCoordinate2D location; 
+        CLLocationCoordinate2D location;
         location.latitude = (minLat + maxLat)/2;
         location.longitude = (minLon + maxLon)/2;
         
-        region.span=span; 
-        region.center=location; 
-        [self.mapView setRegion:region animated:TRUE]; 
-        [self.mapView regionThatFits:region]; 
-    }  
+        region.span=span;
+        region.center=location;
+        [self.mapView setRegion:region animated:TRUE];
+        [self.mapView regionThatFits:region];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -140,7 +140,7 @@ static float maxLat;
         
         CGRect rect = CGRectMake(0, 0, 30, 30);
         CGImageRef imageRef = CGImageCreateWithImageInRect([place.thumbnail CGImage], rect);
-        UIImage *result = [UIImage imageWithCGImage:imageRef]; 
+        UIImage *result = [UIImage imageWithCGImage:imageRef];
         
         UIImageView *memorialIcon = [[UIImageView alloc] initWithImage:result];
         customPinView.leftCalloutAccessoryView = memorialIcon;

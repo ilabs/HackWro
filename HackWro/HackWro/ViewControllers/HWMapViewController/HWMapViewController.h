@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface HWMapViewController : UIViewController <MKMapViewDelegate, MKAnnotation>
+@interface HWMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate> {
+    CLLocationManager *locationManager;
+}
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) NSMutableArray *points;
+@property (nonatomic, strong) NSString *userLocation;
 
 @end

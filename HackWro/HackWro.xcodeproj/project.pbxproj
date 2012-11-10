@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		3C16F80F164E635300C91997 /* HWEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F801164E635300C91997 /* HWEventViewController.m */; };
 		3C16F810164E635300C91997 /* HWEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F802164E635300C91997 /* HWEventViewController.xib */; };
-		3C16F813164E635300C91997 /* HWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F809164E635300C91997 /* HWMapViewController.m */; };
-		3C16F814164E635300C91997 /* HWMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F80A164E635300C91997 /* HWMapViewController.xib */; };
 		3C16F86C164E83E000C91997 /* HWObjectiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F86B164E83E000C91997 /* HWObjectiveCell.m */; };
 		3C16F86F164E840500C91997 /* HWObjectiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F86E164E840500C91997 /* HWObjectiveCell.xib */; };
+		501A5009164EA90800D1D612 /* HWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A5007164EA90800D1D612 /* HWMapViewController.m */; };
+		501A500A164EA90800D1D612 /* HWMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501A5008164EA90800D1D612 /* HWMapViewController.xib */; };
 		50E51ABD164DA49E004E5C2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51ABC164DA49E004E5C2F /* UIKit.framework */; };
 		50E51ABF164DA49E004E5C2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51ABE164DA49E004E5C2F /* Foundation.framework */; };
 		50E51AC1164DA49E004E5C2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51AC0164DA49E004E5C2F /* CoreGraphics.framework */; };
@@ -50,12 +50,12 @@
 		3C16F800164E635300C91997 /* HWEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEventViewController.h; sourceTree = "<group>"; };
 		3C16F801164E635300C91997 /* HWEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEventViewController.m; sourceTree = "<group>"; };
 		3C16F802164E635300C91997 /* HWEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEventViewController.xib; sourceTree = "<group>"; };
-		3C16F808164E635300C91997 /* HWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMapViewController.h; sourceTree = "<group>"; };
-		3C16F809164E635300C91997 /* HWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMapViewController.m; sourceTree = "<group>"; };
-		3C16F80A164E635300C91997 /* HWMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMapViewController.xib; sourceTree = "<group>"; };
 		3C16F86A164E83E000C91997 /* HWObjectiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWObjectiveCell.h; sourceTree = "<group>"; };
 		3C16F86B164E83E000C91997 /* HWObjectiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWObjectiveCell.m; sourceTree = "<group>"; };
 		3C16F86E164E840500C91997 /* HWObjectiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWObjectiveCell.xib; sourceTree = "<group>"; };
+		501A5006164EA90800D1D612 /* HWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMapViewController.h; sourceTree = "<group>"; };
+		501A5007164EA90800D1D612 /* HWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMapViewController.m; sourceTree = "<group>"; };
+		501A5008164EA90800D1D612 /* HWMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMapViewController.xib; sourceTree = "<group>"; };
 		50E51AB8164DA49E004E5C2F /* HackWro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackWro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E51ABC164DA49E004E5C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50E51ABE164DA49E004E5C2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,9 +137,9 @@
 		3C16F807164E635300C91997 /* HWMapViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3C16F808164E635300C91997 /* HWMapViewController.h */,
-				3C16F809164E635300C91997 /* HWMapViewController.m */,
-				3C16F80A164E635300C91997 /* HWMapViewController.xib */,
+				501A5006164EA90800D1D612 /* HWMapViewController.h */,
+				501A5007164EA90800D1D612 /* HWMapViewController.m */,
+				501A5008164EA90800D1D612 /* HWMapViewController.xib */,
 			);
 			path = HWMapViewController;
 			sourceTree = "<group>";
@@ -382,7 +382,6 @@
 				50E51AD1164DA49E004E5C2F /* Default@2x.png in Resources */,
 				50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */,
 				3C16F810164E635300C91997 /* HWEventViewController.xib in Resources */,
-				3C16F814164E635300C91997 /* HWMapViewController.xib in Resources */,
 				50E51B0C164E652C004E5C2F /* miliony.xml in Resources */,
 				50E51B0D164E652C004E5C2F /* template.xml in Resources */,
 				50E51B0E164E652C004E5C2F /* test.xml in Resources */,
@@ -390,6 +389,7 @@
 				EA4B5FE2164E6BD10094DAAB /* HWMainViewController.xib in Resources */,
 				3C16F86F164E840500C91997 /* HWObjectiveCell.xib in Resources */,
 				50E51B4A164E93CA004E5C2F /* HWStatsViewController.xib in Resources */,
+				501A500A164EA90800D1D612 /* HWMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +404,6 @@
 				50E51ACD164DA49E004E5C2F /* HWAppDelegate.m in Sources */,
 				DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */,
 				3C16F80F164E635300C91997 /* HWEventViewController.m in Sources */,
-				3C16F813164E635300C91997 /* HWMapViewController.m in Sources */,
 				50E51B03164E652C004E5C2F /* NSDictionary+Additions.m in Sources */,
 				50E51B04164E652C004E5C2F /* NSMutableDictionary+Additions.m in Sources */,
 				50E51B05164E652C004E5C2F /* NSObject+Parsed.m in Sources */,
@@ -419,6 +418,7 @@
 				687AC05E164E79CD00AF6E81 /* HWPlace.m in Sources */,
 				3C16F86C164E83E000C91997 /* HWObjectiveCell.m in Sources */,
 				50E51B49164E93CA004E5C2F /* HWStatsViewController.m in Sources */,
+				501A5009164EA90800D1D612 /* HWMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
