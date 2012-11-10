@@ -132,11 +132,17 @@
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager didLoadObjective:(Objective *)objective {
+    if (currentObjective) {
+        currentObjective.completionTime = [startDate timeIntervalSinceNow]*-1.0;
+    }
+    
     [self.webView loadHTMLString:objective.objectiveDescription baseURL:nil];
     self.timeLabel.font = [UIFont boldSystemFontOfSize:20];
     self.timeLabel.text = @"Nieograniczony";
     currentObjective = objective;
+    startDate = [NSDate date];
     [self.mapButton setTitle:objective.targetLocation.title forState:UIControlStateNormal];
+    
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager didFailWithError:(NSError *)error {
@@ -146,6 +152,7 @@
 - (void)scenarioManager:(ScenarioManager *)scenarioManager timeLeftChanged:(NSUInteger)timeLeft {
     self.timeLabel.font = [UIFont boldSystemFontOfSize:39];
     self.timeLabel.text = [self stringWithTimeInterval:timeLeft];
+
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager objectiveFailed:(Objective *)objective {

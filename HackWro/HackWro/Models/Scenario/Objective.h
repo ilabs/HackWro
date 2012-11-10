@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSString *objectiveDescription, *title;
 @property (nonatomic, strong) NSArray *events;
 @property (nonatomic, strong) Location *targetLocation;
+@property (nonatomic) NSTimeInterval completionTime;
 
 
 @end

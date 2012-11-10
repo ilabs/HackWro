@@ -20,6 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.mainViewController = [[HWMainViewController alloc] initWithNibName:@"HWMainViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.mainViewController];
+    nav.navigationBar.barStyle = UIBarStyleBlack;
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;

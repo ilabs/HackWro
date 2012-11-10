@@ -10,8 +10,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "ScenarioManager.h"
 
-@interface HWEventViewController : UIViewController <CLLocationManagerDelegate> {
-    NSDate *finishDate;
+@interface HWEventViewController : UIViewController <CLLocationManagerDelegate, ScenarioManagerDelegate> {
+    NSDate *startDate;
     Location *finishLocaton;
     Objective *currentObjective;
 }
