@@ -12,8 +12,8 @@
 
 @interface HWEventViewController : UIViewController <CLLocationManagerDelegate> {
     NSDate *finishDate;
-    NSTimer *timer;
     Location *finishLocaton;
+    Objective *currentObjective;
 }
 
 @property (nonatomic, strong) IBOutlet UIButton *mapButton;

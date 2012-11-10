@@ -45,8 +45,6 @@
     [self hideSubviewsBackground:self.popupWebView];
     [self hideSubviewsBackground:self.webView];
 
-    
-    
     [self.scenarioManager runScenario];
 
 }
@@ -62,24 +60,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)startTimer:(NSTimeInterval)timeLeft {
-    if (timeLeft > 0.0) {
-        finishDate = [NSDate dateWithTimeIntervalSinceNow:timeLeft]; // to do, add time!
-        timer = [[NSTimer alloc] initWithFireDate:[NSDate date] interval:1.0 target:self selector:@selector(timerUpdate:) userInfo:nil repeats:YES];
-        [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
-    } else {
-        self.timeLabel.text = @"Nieograniczony";
-    }
-}
-
-- (void)timerUpdate:(NSNotification*)notif {
-    if ([finishDate timeIntervalSinceNow] <= 0.0) {
-        [timer invalidate];
-        [self questFailed:nil];
-    } else
-        self.timeLabel.text = [self stringWithTimeInterval:[finishDate timeIntervalSinceNow]];
 }
 
 - (NSString*)stringWithTimeInterval:(NSTimeInterval)interval {
@@ -100,8 +80,9 @@
 - (IBAction)showMap:(id)sender {
     HWPlace *place = [[HWPlace alloc] init];
     place.location = [[CLLocation alloc] initWithLatitude:finishLocaton.coordinates.latitude longitude:finishLocaton.coordinates.longitude];
-    place.name = self.
+    place.name = finishLocaton.title;
     HWMapViewController *mapViewController = [[HWMapViewController alloc] initWithNibName:@"HWMapViewController" bundle:nil];
+    [self.navigationController pushViewController:mapViewController animated:YES];
 }
 
 - (IBAction)hidePopup:(id)sender {
@@ -142,14 +123,19 @@
     [self startTimer:objective.timeLimit];
     [self.webView loadHTMLString:objective.objectiveDescription baseURL:nil];
     finishLocaton = objective.targetLocation;
+    self.timeLabel.font = [UIFont boldSystemFontOfSize:20];
+    self.timeLabel.text = @"Nieograniczony";
+    currentObjective = objective;
+    [self.mapButton setTitle:objective.targetLocation.title forState:UIControlStateNormal];
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager didFailWithError:(NSError *)error {
-    
+    [[[UIAlertView alloc] initWithTitle:@"Błąd!" message:@"Mam problem z załadowaniem czegoś. Przeraszamy!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager timeLeftChanged:(NSUInteger)timeLeft {
-    finishDate = [NSDate dateWithTimeIntervalSinceNow:timeLeft];
+    self.timeLabel.font = [UIFont boldSystemFontOfSize:39];
+    self.timeLabel.text = [self stringWithTimeInterval:timeLeft];
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager objectiveFailed:(Objective *)objective {

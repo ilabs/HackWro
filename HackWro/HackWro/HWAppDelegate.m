@@ -8,6 +8,7 @@
 
 #import "HWAppDelegate.h"
 #import "HWMainViewController.h"
+#import "HWEventViewController.h"
 
 @implementation HWAppDelegate
 
@@ -15,8 +16,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.mainViewController = [[HWMainViewController alloc] initWithNibName:@"HWMainViewController" bundle:nil];
+    //self.mainViewController = [[HWMainViewController alloc] initWithNibName:@"HWMainViewController" bundle:nil];
     
+    self.mainViewController = [[HWEventViewController alloc] initWithNibName:@"HWEventViewController" bundle:nil];
     
     self.window.rootViewController = self.mainViewController;
     

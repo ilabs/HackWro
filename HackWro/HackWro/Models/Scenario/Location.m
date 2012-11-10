@@ -17,6 +17,8 @@
             self.reachEvent = [[Event alloc] initWithDictionary:[dictionary objectForKey:@"reach_event"]];
         }
         
+        self.title = [dictionary textObjectForKey:@"title"];
+        
         id coordinates = [dictionary objectForKey:@"location_coordinates"];
 
         if(coordinates && [coordinates isKindOfClass:[NSDictionary class]]) {
