@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class Scenario;
 @class ScenarioManager;
 
 @interface HWMainViewController : UIViewController
 {
     ScenarioManager*    scenarioManager;
+    Scenario*           scenario;
 }
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 

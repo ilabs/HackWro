@@ -10,6 +10,9 @@
 #import "HWObjectiveCell.h"
 #import "Objective.h"
 
+#import "SHK.h"
+#import "SHKFacebook.h"
+
 @interface HWStatsViewController ()
 
 @end
@@ -77,6 +80,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Share" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonClicked)];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -84,6 +88,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)leftBarButtonClicked
+{
+    NSString *facebookShareText = [NSString stringWithFormat:@"Melduje wykonanie zadania kapitanie!"];
+    SHKItem *item = [SHKItem text:facebookShareText];
+    [SHKFacebook shareItem:item];
 }
 
 @end

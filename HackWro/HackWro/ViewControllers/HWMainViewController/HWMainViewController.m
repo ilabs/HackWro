@@ -10,6 +10,10 @@
 #import "ScenarioManager.h"
 #import "HWEventViewController.h"
 #import "HWStatsViewController.h"
+
+#import "SHK.h"
+#import "SHKFacebook.h"
+
 @interface HWMainViewController ()
 
 @end
@@ -44,12 +48,12 @@
         }
     }
     
-    Scenario *scenario = [scenarioManager loadScenario:[[NSBundle mainBundle] pathForResource:@"miliony" ofType:@"xml"]];
+    scenario = [scenarioManager loadScenario:[[NSBundle mainBundle] pathForResource:@"miliony" ofType:@"xml"]];
     
     // load navigationBar
     self.navigationController.navigationBar.topItem.title = scenario.title;
     self.navigationController.navigationBar.topItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Dalej" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClicked)];
-    self.navigationController.navigationBar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonClicked)];
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Share" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonClicked)];
  
     [self.webView loadHTMLString:scenario.scenarioDescription baseURL:[[NSBundle mainBundle] resourceURL]];
     
@@ -78,7 +82,9 @@
 
 - (void)leftBarButtonClicked
 {
-    NSLog(@"left");
+    NSString *facebookShareText = [NSString stringWithFormat:@"Zagraj ze mną w %@!", scenario.title];
+    SHKItem *item = [SHKItem text:facebookShareText];
+    [SHKFacebook shareItem:item];
 }
 
 @end

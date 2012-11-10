@@ -45,7 +45,60 @@
 		DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A11E164E5EB70020E28A /* MyLocation.m */; };
 		EA4B5FE1164E6BD10094DAAB /* HWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4B5FDF164E6BD10094DAAB /* HWMainViewController.m */; };
 		EA4B5FE2164E6BD10094DAAB /* HWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4B5FE0164E6BD10094DAAB /* HWMainViewController.xib */; };
+		EAD6A0C2164ECF15003A7A93 /* libShareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD6A0B8164ECDFE003A7A93 /* libShareKit.a */; };
+		EAD6A0C3164ECF2A003A7A93 /* ShareKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAD6A0BA164ECDFE003A7A93 /* ShareKit.bundle */; };
+		EAD6A0C5164ECFA7003A7A93 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD6A0C4164ECFA7003A7A93 /* SystemConfiguration.framework */; };
+		EAD6A0C7164ECFB2003A7A93 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD6A0C6164ECFB2003A7A93 /* Security.framework */; };
+		EAD6A0C9164ECFBA003A7A93 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD6A0C8164ECFBA003A7A93 /* MessageUI.framework */; };
+		EAD6A0CB164ECFC2003A7A93 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD6A0CA164ECFC2003A7A93 /* CFNetwork.framework */; };
+		EAD6A0CD164ECFD6003A7A93 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD6A0CC164ECFD6003A7A93 /* Twitter.framework */; };
+		EAD6A0CF164ECFE1003A7A93 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD6A0CE164ECFE1003A7A93 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAD6A0B5164ECDFE003A7A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = "Demo App";
+		};
+		EAD6A0B7164ECDFE003A7A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AB5342E1552AADD00171BCE;
+			remoteInfo = "Static Library";
+		};
+		EAD6A0B9164ECDFE003A7A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AB5360F1552E26800171BCE;
+			remoteInfo = "Resource Bundle";
+		};
+		EAD6A0BB164ECDFE003A7A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A0F9246156BA2A0009CB40A;
+			remoteInfo = "Static Library No Submodules";
+		};
+		EAD6A0BE164ECECC003A7A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB5342D1552AADD00171BCE;
+			remoteInfo = "Static Library";
+		};
+		EAD6A0C0164ECECC003A7A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB5360E1552E26800171BCE;
+			remoteInfo = "Resource Bundle";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3C16F800164E635300C91997 /* HWEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEventViewController.h; sourceTree = "<group>"; };
@@ -108,6 +161,13 @@
 		EA4B5FDE164E6BD10094DAAB /* HWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMainViewController.h; sourceTree = "<group>"; };
 		EA4B5FDF164E6BD10094DAAB /* HWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMainViewController.m; sourceTree = "<group>"; };
 		EA4B5FE0164E6BD10094DAAB /* HWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMainViewController.xib; sourceTree = "<group>"; };
+		EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShareKit.xcodeproj; path = Submodules/ShareKit/ShareKit.xcodeproj; sourceTree = "<group>"; };
+		EAD6A0C4164ECFA7003A7A93 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EAD6A0C6164ECFB2003A7A93 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EAD6A0C8164ECFBA003A7A93 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EAD6A0CA164ECFC2003A7A93 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EAD6A0CC164ECFD6003A7A93 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		EAD6A0CE164ECFE1003A7A93 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +175,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD6A0CF164ECFE1003A7A93 /* CoreFoundation.framework in Frameworks */,
+				EAD6A0CD164ECFD6003A7A93 /* Twitter.framework in Frameworks */,
+				EAD6A0CB164ECFC2003A7A93 /* CFNetwork.framework in Frameworks */,
+				EAD6A0C9164ECFBA003A7A93 /* MessageUI.framework in Frameworks */,
+				EAD6A0C7164ECFB2003A7A93 /* Security.framework in Frameworks */,
+				EAD6A0C5164ECFA7003A7A93 /* SystemConfiguration.framework in Frameworks */,
+				EAD6A0C2164ECF15003A7A93 /* libShareKit.a in Frameworks */,
 				68DD80A9164EAD4800CBC4E9 /* QuartzCore.framework in Frameworks */,
 				50E51AC1164DA49E004E5C2F /* CoreGraphics.framework in Frameworks */,
 				50E51B11164E655E004E5C2F /* MapKit.framework in Frameworks */,
@@ -163,6 +230,13 @@
 		50E51AAD164DA49E004E5C2F = {
 			isa = PBXGroup;
 			children = (
+				EAD6A0CE164ECFE1003A7A93 /* CoreFoundation.framework */,
+				EAD6A0CC164ECFD6003A7A93 /* Twitter.framework */,
+				EAD6A0CA164ECFC2003A7A93 /* CFNetwork.framework */,
+				EAD6A0C8164ECFBA003A7A93 /* MessageUI.framework */,
+				EAD6A0C6164ECFB2003A7A93 /* Security.framework */,
+				EAD6A0C4164ECFA7003A7A93 /* SystemConfiguration.framework */,
+				EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */,
 				50E51AC2164DA49E004E5C2F /* HackWro */,
 				50E51ABB164DA49E004E5C2F /* Frameworks */,
 				50E51AB9164DA49E004E5C2F /* Products */,
@@ -329,6 +403,17 @@
 			path = HWMainViewController;
 			sourceTree = "<group>";
 		};
+		EAD6A0AB164ECDFE003A7A93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAD6A0B6164ECDFE003A7A93 /* ShareKitDemo.app */,
+				EAD6A0B8164ECDFE003A7A93 /* libShareKit.a */,
+				EAD6A0BA164ECDFE003A7A93 /* ShareKit.bundle */,
+				EAD6A0BC164ECDFE003A7A93 /* libShareKitNoSubmodules.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,6 +428,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				EAD6A0BF164ECECC003A7A93 /* PBXTargetDependency */,
+				EAD6A0C1164ECECC003A7A93 /* PBXTargetDependency */,
 			);
 			name = HackWro;
 			productName = HackWro;
@@ -369,6 +456,12 @@
 			mainGroup = 50E51AAD164DA49E004E5C2F;
 			productRefGroup = 50E51AB9164DA49E004E5C2F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EAD6A0AB164ECDFE003A7A93 /* Products */;
+					ProjectRef = EAD6A0AA164ECDFE003A7A93 /* ShareKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50E51AB7164DA49E004E5C2F /* HackWro */,
@@ -376,11 +469,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		EAD6A0B6164ECDFE003A7A93 /* ShareKitDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ShareKitDemo.app;
+			remoteRef = EAD6A0B5164ECDFE003A7A93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAD6A0B8164ECDFE003A7A93 /* libShareKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShareKit.a;
+			remoteRef = EAD6A0B7164ECDFE003A7A93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAD6A0BA164ECDFE003A7A93 /* ShareKit.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ShareKit.bundle;
+			remoteRef = EAD6A0B9164ECDFE003A7A93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EAD6A0BC164ECDFE003A7A93 /* libShareKitNoSubmodules.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShareKitNoSubmodules.a;
+			remoteRef = EAD6A0BB164ECDFE003A7A93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		50E51AB6164DA49E004E5C2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD6A0C3164ECF2A003A7A93 /* ShareKit.bundle in Resources */,
 				50E51AC7164DA49E004E5C2F /* InfoPlist.strings in Resources */,
 				50E51ACF164DA49E004E5C2F /* Default.png in Resources */,
 				50E51AD1164DA49E004E5C2F /* Default@2x.png in Resources */,
@@ -428,6 +553,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EAD6A0BF164ECECC003A7A93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Static Library";
+			targetProxy = EAD6A0BE164ECECC003A7A93 /* PBXContainerItemProxy */;
+		};
+		EAD6A0C1164ECECC003A7A93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Resource Bundle";
+			targetProxy = EAD6A0C0164ECECC003A7A93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		50E51AC5164DA49E004E5C2F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -449,6 +587,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -499,9 +638,14 @@
 				GCC_PREFIX_HEADER = "HackWro/HackWro-Prefix.pch";
 				INFOPLIST_FILE = "HackWro/HackWro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = quizzpy;
 				PROVISIONING_PROFILE = "71BC492F-5E7E-4414-B5EF-7B4438D46AE9";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71BC492F-5E7E-4414-B5EF-7B4438D46AE9";
+				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -514,8 +658,13 @@
 				GCC_PREFIX_HEADER = "HackWro/HackWro-Prefix.pch";
 				INFOPLIST_FILE = "HackWro/HackWro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = quizzpy;
 				PROVISIONING_PROFILE = "71BC492F-5E7E-4414-B5EF-7B4438D46AE9";
+				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -10,6 +10,8 @@
 #import "HWMainViewController.h"
 #import "HWEventViewController.h"
 
+#import "SHKConfiguration.h"
+
 @implementation HWAppDelegate
 
 @synthesize window = _window;
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    DefaultSHKConfigurator *configurator = [[DefaultSHKConfigurator alloc] init];
+    [SHKConfiguration sharedInstanceWithConfigurator:configurator];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.mainViewController = [[HWMainViewController alloc] initWithNibName:@"HWMainViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:self.mainViewController];
