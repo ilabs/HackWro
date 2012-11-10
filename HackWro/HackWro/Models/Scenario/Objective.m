@@ -16,6 +16,7 @@
     if((self = [super init])) {
         self.timeLimit = [[dictionary textObjectForKey:@"time_limit"] integerValue];
         self.objectiveDescription = [dictionary textObjectForKey:@"description"];
+        self.title = [dictionary textObjectForKey:@"title"];
         self.targetLocation = [[Location alloc] initWithDictionary:[dictionary objectForKey:@"target_location"]];
         
         id event = [[dictionary objectForKey:@"events"] objectForKey:@"event"];

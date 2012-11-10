@@ -15,8 +15,9 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
 @property (assign) NSUInteger timeLimit;
-@property (nonatomic, strong) NSString *objectiveDescription;
+@property (nonatomic, strong) NSString *objectiveDescription, *title;
 @property (nonatomic, strong) NSArray *events;
 @property (nonatomic, strong) Location *targetLocation;
+
 
 @end

@@ -16,7 +16,5 @@
 @property (nonatomic, strong) UIImage *thumbnail;
 @property (nonatomic, strong) CLLocation *location;
 @property (nonatomic, strong) NSString *address;
-@property (nonatomic, strong) NSString *lat;
-@property (nonatomic, strong) NSString *lon;
 
 @end
