@@ -19,6 +19,8 @@
 		68C83302164DAD67002C778A /* HWEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C83300164DAD67002C778A /* HWEventViewController.m */; };
 		68C83303164DAD67002C778A /* HWEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68C83301164DAD67002C778A /* HWEventViewController.xib */; };
 		68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8330D164DB0B3002C778A /* CoreLocation.framework */; };
+		DB77A11A164E5EAC0020E28A /* HWPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A119164E5EAC0020E28A /* HWPlace.m */; };
+		DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A11E164E5EB70020E28A /* MyLocation.m */; };
 		EA95FAA6164E599C000DD5B3 /* HWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA95FAA4164E599C000DD5B3 /* HWMainViewController.m */; };
 		EA95FAA7164E599C000DD5B3 /* HWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA95FAA5164E599C000DD5B3 /* HWMainViewController.xib */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,10 @@
 		68C83300164DAD67002C778A /* HWEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEventViewController.m; sourceTree = "<group>"; };
 		68C83301164DAD67002C778A /* HWEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEventViewController.xib; sourceTree = "<group>"; };
 		68C8330D164DB0B3002C778A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DB77A118164E5EAC0020E28A /* HWPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPlace.h; sourceTree = "<group>"; };
+		DB77A119164E5EAC0020E28A /* HWPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPlace.m; sourceTree = "<group>"; };
+		DB77A11D164E5EB70020E28A /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
+		DB77A11E164E5EB70020E28A /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
 		EA95FAA3164E599C000DD5B3 /* HWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMainViewController.h; sourceTree = "<group>"; };
 		EA95FAA4164E599C000DD5B3 /* HWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMainViewController.m; sourceTree = "<group>"; };
 		EA95FAA5164E599C000DD5B3 /* HWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMainViewController.xib; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		50E51AC2164DA49E004E5C2F /* HackWro */ = {
 			isa = PBXGroup;
 			children = (
+				DB77A11C164E5EB70020E28A /* Helpers */,
+				DB77A117164E5EAC0020E28A /* Models */,
 				68C832FD164DAD67002C778A /* ViewControllers */,
 				50E51ACB164DA49E004E5C2F /* HWAppDelegate.h */,
 				50E51ACC164DA49E004E5C2F /* HWAppDelegate.m */,
@@ -133,6 +141,24 @@
 				68C83301164DAD67002C778A /* HWEventViewController.xib */,
 			);
 			path = HWEventViewController;
+			sourceTree = "<group>";
+		};
+		DB77A117164E5EAC0020E28A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB77A118164E5EAC0020E28A /* HWPlace.h */,
+				DB77A119164E5EAC0020E28A /* HWPlace.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB77A11C164E5EB70020E28A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB77A11D164E5EB70020E28A /* MyLocation.h */,
+				DB77A11E164E5EB70020E28A /* MyLocation.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +233,8 @@
 				50E51ACD164DA49E004E5C2F /* HWAppDelegate.m in Sources */,
 				68C83302164DAD67002C778A /* HWEventViewController.m in Sources */,
 				EA95FAA6164E599C000DD5B3 /* HWMainViewController.m in Sources */,
+				DB77A11A164E5EAC0020E28A /* HWPlace.m in Sources */,
+				DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackWro/HackWro-Prefix.pch";
 				INFOPLIST_FILE = "HackWro/HackWro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -291,6 +320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackWro/HackWro-Prefix.pch";
 				INFOPLIST_FILE = "HackWro/HackWro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
