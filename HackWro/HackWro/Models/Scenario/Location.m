@@ -33,7 +33,14 @@
 }
 
 - (double)distanceFromCLLocation:(CLLocation *)location {
-    return sqrt(pow((location.coordinate.latitude - self.coordinates.latitude), 2.0) + pow((location.coordinate.longitude - self.coordinates.longitude), 2.0));
+    CLLocationCoordinate2D l2, l3;
+    l2.latitude = self.coordinates.latitude;
+    l2.longitude = self.coordinates.longitude;
+    l3.latitude = location.coordinate.latitude;
+    l3.longitude = location.coordinate.longitude;
+    
+    return MKMetersBetweenMapPoints(MKMapPointForCoordinate(l2), MKMapPointForCoordinate(l3));
+    //return sqrt(pow((location.coordinate.latitude - self.coordinates.latitude), 2.0) + pow((location.coordinate.longitude - self.coordinates.longitude), 2.0));
 }
 
 @end

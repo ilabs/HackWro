@@ -16,10 +16,16 @@ static float maxLon;
 static float minLat;
 static float maxLat;
 
+static float userLatitude;
+static float userLongitude;
+
+static BOOL updated;
+
 @implementation HWMapViewController
 
 @synthesize mapView = _mapView;
 @synthesize points = _points;
+@synthesize userLocation = _userLocation;
 
 - (NSMutableArray *) points {
     if(_points == nil) {
@@ -47,6 +53,7 @@ static float maxLat;
     minLat = FLT_MAX;
     minLon = FLT_MAX;
     
+    updated = NO;
     return self;
 }
 
@@ -64,20 +71,24 @@ static float maxLat;
         [pin setAddress:place.address];
         [self.mapView addAnnotation:pin];
     }
+    self.mapView.showsUserLocation = YES;
 }
 
-- (void) zoomAndFit {
+- (void) zoomAndFitWithUserLocation {
     if([self.points count] > 0) {
         for(int i = 0; i < [self.points count]; i++) {
             HWPlace *place = [self.points objectAtIndex:i];
-            
-            NSLog(@"lon %f", place.location.coordinate.longitude);
-            NSLog(@"lat %f", place.location.coordinate.latitude);
             minLat = MIN(minLat, place.location.coordinate.latitude);
             minLon = MIN(minLon, place.location.coordinate.longitude);
             maxLat = MAX(maxLat, place.location.coordinate.latitude);
             maxLon = MAX(maxLon, place.location.coordinate.longitude);
         }
+        
+        minLat = MIN(minLat, userLatitude);
+        minLon = MIN(minLon, userLongitude);
+        maxLat = MAX(maxLat, userLatitude);
+        maxLon = MAX(maxLon, userLongitude);
+        
         MKCoordinateRegion region;
         MKCoordinateSpan span;
         span.latitudeDelta = 1.2*(maxLat - minLat);
@@ -91,6 +102,7 @@ static float maxLat;
         region.center=location;
         [self.mapView setRegion:region animated:TRUE];
         [self.mapView regionThatFits:region];
+        updated = YES;
     }
 }
 
@@ -107,10 +119,19 @@ static float maxLat;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"points: %@", [self.points[0] location]);
+    
+    self.mapView.showsUserLocation = YES;
+    
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.distanceFilter = kCLDistanceFilterNone; // whenever we move
+    locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
+    [locationManager startUpdatingLocation];
+    
+    userLatitude = locationManager.location.coordinate.latitude;
+    userLongitude = locationManager.location.coordinate.longitude;
+    
     [self generateAnnotation];
-    [self zoomAndFit];
-    //[self zoomAndFit];
+    [self zoomAndFitWithUserLocation];
     // Do any additional setup after loading the view from its nib.
 }
 

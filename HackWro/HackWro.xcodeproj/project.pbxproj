@@ -489,11 +489,15 @@
 		50E51AD7164DA49E004E5C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pawel Nuzka (XD8XEG225T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pawel Nuzka (XD8XEG225T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackWro/HackWro-Prefix.pch";
 				INFOPLIST_FILE = "HackWro/HackWro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9099724D-269D-4A67-84BC-940C29850A4D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9099724D-269D-4A67-84BC-940C29850A4D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -501,11 +505,13 @@
 		50E51AD8164DA49E004E5C2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pawel Nuzka (XD8XEG225T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackWro/HackWro-Prefix.pch";
 				INFOPLIST_FILE = "HackWro/HackWro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9099724D-269D-4A67-84BC-940C29850A4D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

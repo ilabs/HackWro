@@ -165,12 +165,7 @@
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager locationUpdated:(CLLocation *)currentLocation {
-    MKMapPoint p1 = MKMapPointForCoordinate(currentLocation.coordinate);
-    CLLocationCoordinate2D loc;
-    loc.latitude = finishLocaton.coordinates.latitude;
-    loc.longitude = finishLocaton.coordinates.longitude;
-    MKMapPoint p2 = MKMapPointForCoordinate(loc);
-    CLLocationDistance dist = MKMetersBetweenMapPoints(p1, p2);
+    double dist = [currentObjective.targetLocation distanceFromCLLocation:currentLocation];
     self.distanceLabel.text = [NSString stringWithFormat:@"%.0f m", dist];
 
 }
