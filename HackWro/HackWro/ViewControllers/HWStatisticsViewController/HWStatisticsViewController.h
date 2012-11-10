@@ -10,7 +10,7 @@
 #import "Scenario.h"
 
 @interface HWStatisticsViewController : UITableViewController {
-    NSDictionary *objectives;
+    NSArray *objectives;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
@@ -20,7 +20,7 @@
 @property (nonatomic, retain) NSArray *myTimes;
 @property (nonatomic, retain) NSArray *myTasks;
 
-- (id) initWithObjectives:(NSDictionary*)Objectives;
+- (id) initWithObjectives:(NSArray*)objects;
 
 - (void) userFinishedTasks:(Scenario *)task;
 

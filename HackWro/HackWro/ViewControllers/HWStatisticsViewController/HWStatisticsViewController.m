@@ -8,6 +8,8 @@
 
 #import "HWStatisticsViewController.h"
 #import "Scenario.h"
+#import "HWObjectiveCell.h"
+#import "Objective.h"
 
 @interface HWStatisticsViewController ()
 
@@ -21,13 +23,12 @@
 @synthesize myTasks = _myTasks;
 @synthesize myTimes = _myTimes;
 
-- (id) initWithObjectives:(NSDictionary*)Objectives {
-    objectives = Objectives;
-    return self;
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (id) initWithObjectives:(NSArray*)objects {
+    self = [super initWithNibName:@"HWStatisticsViewController" bundle:nil];
+    if (self)
+    {
+        objectives = [NSArray arrayWithArray:objects];
+    }
     return self;
 }
 
@@ -54,8 +55,40 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [objectives count];
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    if(section==0){
+        return [objectives count];
+    }else{
+        return 1;
+    }
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *CellIdentifier = @"HWObjectiveCell";
+    NSString *CellNib = @"HWObjectiveCell";
+    
+    
+   Objective *objective  = [objectives objectAtIndex:indexPath.row];
+    
+    id cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:CellNib owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    [[cell nameLabel] setText:objective.title];
+    [[cell timeLabel] setText:[NSString stringWithFormat:@"%f", objective.completionTime]];
+    return cell;
 }
 
 @end
