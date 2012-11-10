@@ -37,6 +37,8 @@
 		50E51B0D164E652C004E5C2F /* template.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B01164E652C004E5C2F /* template.xml */; };
 		50E51B0E164E652C004E5C2F /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B02164E652C004E5C2F /* test.xml */; };
 		50E51B11164E655E004E5C2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51B10164E655E004E5C2F /* MapKit.framework */; };
+		50E51B16164E672E004E5C2F /* ScenarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51B14164E672E004E5C2F /* ScenarioViewController.m */; };
+		50E51B17164E672E004E5C2F /* ScenarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B15164E672E004E5C2F /* ScenarioViewController.xib */; };
 		68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8330D164DB0B3002C778A /* CoreLocation.framework */; };
 		DB77A11A164E5EAC0020E28A /* HWPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A119164E5EAC0020E28A /* HWPlace.m */; };
 		DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A11E164E5EB70020E28A /* MyLocation.m */; };
@@ -91,6 +93,9 @@
 		50E51B01164E652C004E5C2F /* template.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = template.xml; sourceTree = "<group>"; };
 		50E51B02164E652C004E5C2F /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
 		50E51B10164E655E004E5C2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		50E51B13164E672E004E5C2F /* ScenarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenarioViewController.h; sourceTree = "<group>"; };
+		50E51B14164E672E004E5C2F /* ScenarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenarioViewController.m; sourceTree = "<group>"; };
+		50E51B15164E672E004E5C2F /* ScenarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScenarioViewController.xib; sourceTree = "<group>"; };
 		68C8330D164DB0B3002C778A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DB77A118164E5EAC0020E28A /* HWPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPlace.h; sourceTree = "<group>"; };
 		DB77A119164E5EAC0020E28A /* HWPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPlace.m; sourceTree = "<group>"; };
@@ -260,9 +265,20 @@
 			path = xmlScenarios;
 			sourceTree = "<group>";
 		};
+		50E51B12164E672E004E5C2F /* HWExampleScenarioViewController */ = {
+			isa = PBXGroup;
+			children = (
+				50E51B13164E672E004E5C2F /* ScenarioViewController.h */,
+				50E51B14164E672E004E5C2F /* ScenarioViewController.m */,
+				50E51B15164E672E004E5C2F /* ScenarioViewController.xib */,
+			);
+			path = HWExampleScenarioViewController;
+			sourceTree = "<group>";
+		};
 		68C832FD164DAD67002C778A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				50E51B12164E672E004E5C2F /* HWExampleScenarioViewController */,
 				3C16F7FF164E635300C91997 /* HWEventViewController */,
 				3C16F803164E635300C91997 /* HWMainViewController */,
 				3C16F807164E635300C91997 /* HWMapViewController */,
@@ -356,6 +372,7 @@
 				50E51B0C164E652C004E5C2F /* miliony.xml in Resources */,
 				50E51B0D164E652C004E5C2F /* template.xml in Resources */,
 				50E51B0E164E652C004E5C2F /* test.xml in Resources */,
+				50E51B17164E672E004E5C2F /* ScenarioViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +400,7 @@
 				50E51B09164E652C004E5C2F /* Objective.m in Sources */,
 				50E51B0A164E652C004E5C2F /* Scenario.m in Sources */,
 				50E51B0B164E652C004E5C2F /* ScenarioManager.m in Sources */,
+				50E51B16164E672E004E5C2F /* ScenarioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
