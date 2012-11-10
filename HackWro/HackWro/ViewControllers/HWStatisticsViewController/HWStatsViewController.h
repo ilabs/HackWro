@@ -14,5 +14,7 @@
 
 }
 @property (nonatomic, strong) NSArray *objectives;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andObjectives:(NSArray *)array;
 @end

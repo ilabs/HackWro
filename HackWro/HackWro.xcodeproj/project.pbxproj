@@ -57,7 +57,7 @@
 		501A5006164EA90800D1D612 /* HWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMapViewController.h; sourceTree = "<group>"; };
 		501A5007164EA90800D1D612 /* HWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMapViewController.m; sourceTree = "<group>"; };
 		501A5008164EA90800D1D612 /* HWMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMapViewController.xib; sourceTree = "<group>"; };
-		50E51AB8164DA49E004E5C2F /* HackWro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackWro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E51AB8164DA49E004E5C2F /* quizzpy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizzpy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E51ABC164DA49E004E5C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50E51ABE164DA49E004E5C2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50E51AC0164DA49E004E5C2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,7 +172,7 @@
 		50E51AB9164DA49E004E5C2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50E51AB8164DA49E004E5C2F /* HackWro.app */,
+				50E51AB8164DA49E004E5C2F /* quizzpy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 			);
 			name = HackWro;
 			productName = HackWro;
-			productReference = 50E51AB8164DA49E004E5C2F /* HackWro.app */;
+			productReference = 50E51AB8164DA49E004E5C2F /* quizzpy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -493,15 +493,15 @@
 		50E51AD7164DA49E004E5C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Pawel Nuzka (XD8XEG225T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pawel Nuzka (XD8XEG225T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pawel Solyga (VJR625GDE2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pawel Solyga (VJR625GDE2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackWro/HackWro-Prefix.pch";
 				INFOPLIST_FILE = "HackWro/HackWro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9099724D-269D-4A67-84BC-940C29850A4D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9099724D-269D-4A67-84BC-940C29850A4D";
+				PRODUCT_NAME = quizzpy;
+				PROVISIONING_PROFILE = "71BC492F-5E7E-4414-B5EF-7B4438D46AE9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71BC492F-5E7E-4414-B5EF-7B4438D46AE9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -509,13 +509,13 @@
 		50E51AD8164DA49E004E5C2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Pawel Nuzka (XD8XEG225T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pawel Solyga (VJR625GDE2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackWro/HackWro-Prefix.pch";
 				INFOPLIST_FILE = "HackWro/HackWro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9099724D-269D-4A67-84BC-940C29850A4D";
+				PRODUCT_NAME = quizzpy;
+				PROVISIONING_PROFILE = "71BC492F-5E7E-4414-B5EF-7B4438D46AE9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

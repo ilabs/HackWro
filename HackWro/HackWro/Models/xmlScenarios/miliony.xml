@@ -14,7 +14,7 @@
     
 	<objectives>
 		<objective>
-            <title>Zajezdnia tramwajowa</title>
+            <title>Katedra</title>
 			<time_limit>0</time_limit>
 			<description><![CDATA[
 				<center><br><img src="http://s3.flog.pl/media/foto/3365828_ostrow-tumski--katedra--wroclaw.jpg" height="140"></center><p>Służba Bezpieczeństwa będzie oczekiwać że kierujecie się z nimi do zajezdni tramwajowej na Biskupinie.</p>
@@ -36,74 +36,12 @@
                 <title>Katedra, Ostrów Tumski</title>
 				<reach_event type="message">
 					<content><![CDATA[
-						Pieniądze są bezpieczne. Udajcie się do zajezdni.
+						<br><center><p style="color:white;font-size:20;">Pieniądze są bezpieczne. Udajcie się do zajezdni.</p></center>
 					]]></content>
 				</reach_event>
                 <location_coordinates>
 					<latitude>51.109355</latitude>
 					<longitude>17.026710</longitude>
-				</location_coordinates>
-			</target_location>
-		</objective>
-		<objective>
-            <title>Wielka ucieczka</title>
-			<time_limit>1800</time_limit>
-			<description><![CDATA[
-				<p>Możecie kierować się do zajezdni na Biskupinie</p>
-			]]></description>
-			<events>
-				<event type="location_message">
-					<location>
-						<location_coordinates>
-                            <latitude>51.110086</latitude>
-                            <longitude>17.026298</longitude>
-                        </location_coordinates>
-					</location>
-					<content><![CDATA[
-						Służba Bezpieczeństwa zorganizowała punkt kontrolny na Moście Grunwaldzkim, na szczęście pozbyliście się dowodu zbrodni i przejeżdżacie bez problemu.
-					]]></content>
-				</event>
-			</events>
-			<target_location>
-				<reach_event type="message">
-					<content><![CDATA[
-						Dotarliście do zajezdni.
-					]]></content>
-				</reach_event>
-				<location_coordinates>
-					<latitude>51.110127</latitude>
-					<longitude>17.025586</longitude>
-				</location_coordinates>
-			</target_location>
-		</objective>
-        <objective>
-            <title>Drukarnia</title>
-			<time_limit>1800</time_limit>
-			<description><![CDATA[
-				<p>Wydawnictwo podziemne wydrukowało nowe egzemplarze paryskiej "Kultury", udaj się na plac Katedralny po ich odbiór </p>
-			]]></description>
-			<events>
-				<event type="location_message">
-					<location>
-						<location_coordinates>
-                          	<latitude>51.109400</latitude>
-                            <longitude>17.025270</longitude>
-                        </location_coordinates>
-					</location>
-					<content><![CDATA[
-						Służba Bezpieczeństwa zorganizowała punkt kontrolny na Moście Grunwaldzkim, na szczęście pozbyliście się dowodu zbrodni i przejeżdżacie bez problemu.
-					]]></content>
-				</event>
-			</events>
-			<target_location>
-				<reach_event type="message">
-					<content><![CDATA[
-						Dotarliście do zajezdni.
-					]]></content>
-				</reach_event>
-                <location_coordinates>
-					<latitude>51.108714</latitude>
-					<longitude>17.027151</longitude>
 				</location_coordinates>
 			</target_location>
 		</objective>

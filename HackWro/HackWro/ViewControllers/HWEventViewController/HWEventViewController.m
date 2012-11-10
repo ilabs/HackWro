@@ -45,7 +45,7 @@
     self.popupWebView.opaque = NO;
     [self hideSubviewsBackground:self.popupWebView];
     [self hideSubviewsBackground:self.webView];
-    [self.scenarioManager runScenario];
+    
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Mapa" style:UIBarButtonItemStylePlain target:self action:@selector(showMap:)];
     self.webView.layer.cornerRadius = 5.0;
@@ -55,7 +55,7 @@
     self.webView.clipsToBounds = YES;
     self.webView.frame = CGRectInset(self.webView.frame, 5.0, 5.0);
     
-    
+    [self.scenarioManager performSelector:@selector(runScenario) withObject:nil afterDelay:2];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -106,7 +106,7 @@
 - (IBAction)showMap:(id)sender {
     HWPlace *place = [[HWPlace alloc] init];
     place.location = [[CLLocation alloc] initWithLatitude:currentObjective.targetLocation.coordinates.latitude longitude:currentObjective.targetLocation.coordinates.longitude];
-    place.name = finishLocaton.title;
+    place.name = currentObjective.targetLocation.title;
     HWMapViewController *mapViewController = [[HWMapViewController alloc] initWithNibName:@"HWMapViewController" bundle:nil];
     [mapViewController setPoints:@[place]];
     mapViewController.title = place.name;
@@ -157,7 +157,8 @@
     self.timeLabel.text = @"Nieograniczony";
     currentObjective = objective;
     startDate = [NSDate date];
-    self.title = objective.targetLocation.title;
+    self.title = objective.title;
+    [self.navigationController.navigationBar.topItem setTitle:objective.title];
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager didFailWithError:(NSError *)error {
@@ -175,7 +176,7 @@
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager eventOccurred:(Event *)event {
-    [self.navigationController popToViewController:self animated:YES];
+    //[self.navigationController popToViewController:self animated:YES];
     [self.popupWebView loadHTMLString:event.content baseURL:nil];
     [self showPopup:nil];
 }
@@ -187,8 +188,15 @@
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager scenarioCompleted:(Scenario *)scenario {
-    HWStatsViewController *stats = [[HWStatsViewController alloc] initWithNibName:@"HWStatsViewController" bundle:nil andObjectives:scenario.objectives];
-    [self.navigationController pushViewController:stats animated:YES];
+    if (statsViewController == nil) {
+        statsViewController = [[HWStatsViewController alloc] initWithNibName:@"HWStatsViewController" bundle:nil andObjectives:scenario.objectives];
+        NSLog(@"Siemka");
+        if (currentObjective) {
+            currentObjective.completionTime = [startDate timeIntervalSinceNow]*-1.0;
+        }
+        self.navigationItem.rightBarButtonItem = nil;
+        [self.navigationController pushViewController:statsViewController animated:YES];
+    }
 }
 
 @end

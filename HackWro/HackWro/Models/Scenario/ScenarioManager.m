@@ -9,7 +9,7 @@
 #import "ScenarioManager.h"
 #import "Parser.h"
 
-#define LOCATION_TOLERANCE 10.0
+#define LOCATION_TOLERANCE 20.0
 
 @interface ScenarioManager (Hidden)
 
@@ -64,7 +64,7 @@
 
 - (void)stopScenario {
     isPlaying = NO;
-    [locationManager startUpdatingLocation];
+    [locationManager stopUpdatingLocation];
 }
 
 - (void)objectiveTimerTicked:(NSTimer *)timer {
@@ -150,7 +150,10 @@
         [objectiveTimer invalidate];
         
         if(currentObjectiveIndex == loadedScenario.objectives.count - 1) {
-            [self.delegate scenarioManager:self scenarioCompleted:loadedScenario];
+            if (isPlaying) {
+                [self.delegate scenarioManager:self scenarioCompleted:loadedScenario];
+                [self stopScenario];
+            }
             isPlaying = NO;
         } else {
             [self loadObjectiveAtIndex:(currentObjectiveIndex + 1)];

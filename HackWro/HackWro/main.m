@@ -12,7 +12,14 @@
 
 int main(int argc, char *argv[])
 {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([HWAppDelegate class]));
+    //@autoreleasepool {
+        @try{
+            return UIApplicationMain(argc, argv, nil, NSStringFromClass([HWAppDelegate class]));
+    } @catch (NSException* exception) {
+        NSLog(@"Uncaught exception: %@", exception.description);
+        NSLog(@"Stack trace: %@", [exception callStackSymbols]);
     }
+	
+        
+   // }
 }

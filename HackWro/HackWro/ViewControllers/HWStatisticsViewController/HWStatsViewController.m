@@ -34,11 +34,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    if(section==0){
-        return [objectives count]+1;
-    }else{
-        return 1;
-    }
+    return [objectives count]+1;
 }
 
 - (float) sumTimes {

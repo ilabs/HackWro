@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "ScenarioManager.h"
+#import "HWStatsViewController.h"
 
 @interface HWEventViewController : UIViewController <CLLocationManagerDelegate, ScenarioManagerDelegate> {
     NSDate *startDate;
     Location *finishLocaton;
     Objective *currentObjective;
+    HWStatsViewController *statsViewController;
 }
 
 @property (nonatomic, strong) IBOutlet UIButton *mapButton;
