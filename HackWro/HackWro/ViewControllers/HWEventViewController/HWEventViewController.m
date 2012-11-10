@@ -24,6 +24,13 @@
     return self;
 }
 
+- (void)hideSubviewsBackground:(UIView*)mainView {
+    for (UIView *view in mainView.subviews) {
+        view.backgroundColor = [UIColor clearColor];
+        view.opaque = NO;
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,13 +46,6 @@
     
     // test
     [self startTimer:10];
-}
-
-- (void)hideSubviewsBackground:(UIView*)mainView {
-    for (UIView *view in mainView.subviews) {
-        view.backgroundColor = [UIColor clearColor];
-        view.opaque = NO;
-    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,13 +64,6 @@
     }
 }
 
-- (void)timerUpdate:(NSNotification*)notif {
-    if ([finishDate timeIntervalSinceNow] <= 0.0) {
-        [timer invalidate];
-        [self questFailed:nil];
-    } else
-        self.timeLabel.text = [self stringWithTimeInterval:[finishDate timeIntervalSinceNow]];
-}
 
 - (NSString*)stringWithTimeInterval:(NSTimeInterval)interval {
     NSTimeInterval time = interval;
@@ -87,6 +80,14 @@
     return [NSString stringWithFormat:@"%ds", (int)time];
 }
 
+
+- (void)timerUpdate:(NSNotification*)notif {
+    if ([finishDate timeIntervalSinceNow] <= 0.0) {
+        [timer invalidate];
+        [self questFailed:nil];
+    } else
+        self.timeLabel.text = [self stringWithTimeInterval:[finishDate timeIntervalSinceNow]];
+}
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation *currentLocation = [locations lastObject];
