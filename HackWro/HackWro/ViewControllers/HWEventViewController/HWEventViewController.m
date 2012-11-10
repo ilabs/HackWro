@@ -100,7 +100,7 @@
 - (IBAction)showMap:(id)sender {
     HWPlace *place = [[HWPlace alloc] init];
     place.location = [[CLLocation alloc] initWithLatitude:finishLocaton.coordinates.latitude longitude:finishLocaton.coordinates.longitude];
-    place.name = self.
+   // place.name = self.
     HWMapViewController *mapViewController = [[HWMapViewController alloc] initWithNibName:@"HWMapViewController" bundle:nil];
 }
 
