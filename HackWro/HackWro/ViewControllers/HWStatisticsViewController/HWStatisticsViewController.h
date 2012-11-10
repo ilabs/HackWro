@@ -17,6 +17,8 @@
 @property (nonatomic, retain) NSArray *myTimes;
 @property (nonatomic, retain) NSArray *myTasks;
 
+- (id) initWithObjectives:(NSArray*)Objectives;
+
 - (void) userFinishedTasks:(NSArray *)noTasks inTimes:(NSArray *)Times;
 - (void) goBack;
 

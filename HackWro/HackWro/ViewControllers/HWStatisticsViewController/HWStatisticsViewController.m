@@ -21,6 +21,10 @@
 @synthesize myTasks = _myTasks;
 @synthesize myTimes = _myTimes;
 
+- (id) initWithObjectives:(NSArray*)Objectives {
+    
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     return self;
