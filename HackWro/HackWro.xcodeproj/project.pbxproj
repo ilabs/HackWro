@@ -24,6 +24,19 @@
 		50E51ACF164DA49E004E5C2F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51ACE164DA49E004E5C2F /* Default.png */; };
 		50E51AD1164DA49E004E5C2F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51AD0164DA49E004E5C2F /* Default@2x.png */; };
 		50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51AD2164DA49E004E5C2F /* Default-568h@2x.png */; };
+		50E51B03164E652C004E5C2F /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AEC164E652C004E5C2F /* NSDictionary+Additions.m */; };
+		50E51B04164E652C004E5C2F /* NSMutableDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AEE164E652C004E5C2F /* NSMutableDictionary+Additions.m */; };
+		50E51B05164E652C004E5C2F /* NSObject+Parsed.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AF0164E652C004E5C2F /* NSObject+Parsed.m */; };
+		50E51B06164E652C004E5C2F /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AF3164E652C004E5C2F /* Parser.m */; };
+		50E51B07164E652C004E5C2F /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AF6164E652C004E5C2F /* Event.m */; };
+		50E51B08164E652C004E5C2F /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AF8164E652C004E5C2F /* Location.m */; };
+		50E51B09164E652C004E5C2F /* Objective.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AFA164E652C004E5C2F /* Objective.m */; };
+		50E51B0A164E652C004E5C2F /* Scenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AFC164E652C004E5C2F /* Scenario.m */; };
+		50E51B0B164E652C004E5C2F /* ScenarioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51AFE164E652C004E5C2F /* ScenarioManager.m */; };
+		50E51B0C164E652C004E5C2F /* miliony.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B00164E652C004E5C2F /* miliony.xml */; };
+		50E51B0D164E652C004E5C2F /* template.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B01164E652C004E5C2F /* template.xml */; };
+		50E51B0E164E652C004E5C2F /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B02164E652C004E5C2F /* test.xml */; };
+		50E51B11164E655E004E5C2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51B10164E655E004E5C2F /* MapKit.framework */; };
 		68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8330D164DB0B3002C778A /* CoreLocation.framework */; };
 		DB77A11A164E5EAC0020E28A /* HWPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A119164E5EAC0020E28A /* HWPlace.m */; };
 		DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A11E164E5EB70020E28A /* MyLocation.m */; };
@@ -55,6 +68,29 @@
 		50E51ACE164DA49E004E5C2F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50E51AD0164DA49E004E5C2F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		50E51AD2164DA49E004E5C2F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		50E51AEA164E652C004E5C2F /* AllAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAdditions.h; sourceTree = "<group>"; };
+		50E51AEB164E652C004E5C2F /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
+		50E51AEC164E652C004E5C2F /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
+		50E51AED164E652C004E5C2F /* NSMutableDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Additions.h"; sourceTree = "<group>"; };
+		50E51AEE164E652C004E5C2F /* NSMutableDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Additions.m"; sourceTree = "<group>"; };
+		50E51AEF164E652C004E5C2F /* NSObject+Parsed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parsed.h"; sourceTree = "<group>"; };
+		50E51AF0164E652C004E5C2F /* NSObject+Parsed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parsed.m"; sourceTree = "<group>"; };
+		50E51AF2164E652C004E5C2F /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		50E51AF3164E652C004E5C2F /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		50E51AF5164E652C004E5C2F /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		50E51AF6164E652C004E5C2F /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		50E51AF7164E652C004E5C2F /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		50E51AF8164E652C004E5C2F /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		50E51AF9164E652C004E5C2F /* Objective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objective.h; sourceTree = "<group>"; };
+		50E51AFA164E652C004E5C2F /* Objective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objective.m; sourceTree = "<group>"; };
+		50E51AFB164E652C004E5C2F /* Scenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scenario.h; sourceTree = "<group>"; };
+		50E51AFC164E652C004E5C2F /* Scenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scenario.m; sourceTree = "<group>"; };
+		50E51AFD164E652C004E5C2F /* ScenarioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenarioManager.h; sourceTree = "<group>"; };
+		50E51AFE164E652C004E5C2F /* ScenarioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenarioManager.m; sourceTree = "<group>"; };
+		50E51B00164E652C004E5C2F /* miliony.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = miliony.xml; sourceTree = "<group>"; };
+		50E51B01164E652C004E5C2F /* template.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = template.xml; sourceTree = "<group>"; };
+		50E51B02164E652C004E5C2F /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		50E51B10164E655E004E5C2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		68C8330D164DB0B3002C778A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DB77A118164E5EAC0020E28A /* HWPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPlace.h; sourceTree = "<group>"; };
 		DB77A119164E5EAC0020E28A /* HWPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPlace.m; sourceTree = "<group>"; };
@@ -67,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E51B11164E655E004E5C2F /* MapKit.framework in Frameworks */,
 				68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */,
 				50E51ABD164DA49E004E5C2F /* UIKit.framework in Frameworks */,
 				50E51ABF164DA49E004E5C2F /* Foundation.framework in Frameworks */,
@@ -120,7 +157,6 @@
 		50E51AAD164DA49E004E5C2F = {
 			isa = PBXGroup;
 			children = (
-				68C8330D164DB0B3002C778A /* CoreLocation.framework */,
 				50E51AC2164DA49E004E5C2F /* HackWro */,
 				50E51ABB164DA49E004E5C2F /* Frameworks */,
 				50E51AB9164DA49E004E5C2F /* Products */,
@@ -138,6 +174,8 @@
 		50E51ABB164DA49E004E5C2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50E51B10164E655E004E5C2F /* MapKit.framework */,
+				68C8330D164DB0B3002C778A /* CoreLocation.framework */,
 				50E51ABC164DA49E004E5C2F /* UIKit.framework */,
 				50E51ABE164DA49E004E5C2F /* Foundation.framework */,
 				50E51AC0164DA49E004E5C2F /* CoreGraphics.framework */,
@@ -172,6 +210,56 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		50E51AE9164E652C004E5C2F /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				50E51AEA164E652C004E5C2F /* AllAdditions.h */,
+				50E51AEB164E652C004E5C2F /* NSDictionary+Additions.h */,
+				50E51AEC164E652C004E5C2F /* NSDictionary+Additions.m */,
+				50E51AED164E652C004E5C2F /* NSMutableDictionary+Additions.h */,
+				50E51AEE164E652C004E5C2F /* NSMutableDictionary+Additions.m */,
+				50E51AEF164E652C004E5C2F /* NSObject+Parsed.h */,
+				50E51AF0164E652C004E5C2F /* NSObject+Parsed.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		50E51AF1164E652C004E5C2F /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				50E51AF2164E652C004E5C2F /* Parser.h */,
+				50E51AF3164E652C004E5C2F /* Parser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		50E51AF4164E652C004E5C2F /* Scenario */ = {
+			isa = PBXGroup;
+			children = (
+				50E51AF5164E652C004E5C2F /* Event.h */,
+				50E51AF6164E652C004E5C2F /* Event.m */,
+				50E51AF7164E652C004E5C2F /* Location.h */,
+				50E51AF8164E652C004E5C2F /* Location.m */,
+				50E51AF9164E652C004E5C2F /* Objective.h */,
+				50E51AFA164E652C004E5C2F /* Objective.m */,
+				50E51AFB164E652C004E5C2F /* Scenario.h */,
+				50E51AFC164E652C004E5C2F /* Scenario.m */,
+				50E51AFD164E652C004E5C2F /* ScenarioManager.h */,
+				50E51AFE164E652C004E5C2F /* ScenarioManager.m */,
+			);
+			path = Scenario;
+			sourceTree = "<group>";
+		};
+		50E51AFF164E652C004E5C2F /* xmlScenarios */ = {
+			isa = PBXGroup;
+			children = (
+				50E51B00164E652C004E5C2F /* miliony.xml */,
+				50E51B01164E652C004E5C2F /* template.xml */,
+				50E51B02164E652C004E5C2F /* test.xml */,
+			);
+			path = xmlScenarios;
+			sourceTree = "<group>";
+		};
 		68C832FD164DAD67002C778A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +274,10 @@
 		DB77A117164E5EAC0020E28A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				50E51AE9164E652C004E5C2F /* Additions */,
+				50E51AF1164E652C004E5C2F /* Parser */,
+				50E51AF4164E652C004E5C2F /* Scenario */,
+				50E51AFF164E652C004E5C2F /* xmlScenarios */,
 				DB77A118164E5EAC0020E28A /* HWPlace.h */,
 				DB77A119164E5EAC0020E28A /* HWPlace.m */,
 			);
@@ -261,6 +353,9 @@
 				3C16F812164E635300C91997 /* HWMainViewController.xib in Resources */,
 				3C16F814164E635300C91997 /* HWMapViewController.xib in Resources */,
 				3C16F816164E635300C91997 /* HWStatisticsViewController.xib in Resources */,
+				50E51B0C164E652C004E5C2F /* miliony.xml in Resources */,
+				50E51B0D164E652C004E5C2F /* template.xml in Resources */,
+				50E51B0E164E652C004E5C2F /* test.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +374,15 @@
 				3C16F811164E635300C91997 /* HWMainViewController.m in Sources */,
 				3C16F813164E635300C91997 /* HWMapViewController.m in Sources */,
 				3C16F815164E635300C91997 /* HWStatisticsViewController.m in Sources */,
+				50E51B03164E652C004E5C2F /* NSDictionary+Additions.m in Sources */,
+				50E51B04164E652C004E5C2F /* NSMutableDictionary+Additions.m in Sources */,
+				50E51B05164E652C004E5C2F /* NSObject+Parsed.m in Sources */,
+				50E51B06164E652C004E5C2F /* Parser.m in Sources */,
+				50E51B07164E652C004E5C2F /* Event.m in Sources */,
+				50E51B08164E652C004E5C2F /* Location.m in Sources */,
+				50E51B09164E652C004E5C2F /* Objective.m in Sources */,
+				50E51B0A164E652C004E5C2F /* Scenario.m in Sources */,
+				50E51B0B164E652C004E5C2F /* ScenarioManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
