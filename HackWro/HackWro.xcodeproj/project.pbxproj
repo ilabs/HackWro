@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C16F80F164E635300C91997 /* HWEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F801164E635300C91997 /* HWEventViewController.m */; };
+		3C16F810164E635300C91997 /* HWEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F802164E635300C91997 /* HWEventViewController.xib */; };
+		3C16F811164E635300C91997 /* HWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F805164E635300C91997 /* HWMainViewController.m */; };
+		3C16F812164E635300C91997 /* HWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F806164E635300C91997 /* HWMainViewController.xib */; };
+		3C16F813164E635300C91997 /* HWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F809164E635300C91997 /* HWMapViewController.m */; };
+		3C16F814164E635300C91997 /* HWMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F80A164E635300C91997 /* HWMapViewController.xib */; };
+		3C16F815164E635300C91997 /* HWStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F80D164E635300C91997 /* HWStatisticsViewController.m */; };
+		3C16F816164E635300C91997 /* HWStatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F80E164E635300C91997 /* HWStatisticsViewController.xib */; };
 		50E51ABD164DA49E004E5C2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51ABC164DA49E004E5C2F /* UIKit.framework */; };
 		50E51ABF164DA49E004E5C2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51ABE164DA49E004E5C2F /* Foundation.framework */; };
 		50E51AC1164DA49E004E5C2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51AC0164DA49E004E5C2F /* CoreGraphics.framework */; };
@@ -16,16 +24,24 @@
 		50E51ACF164DA49E004E5C2F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51ACE164DA49E004E5C2F /* Default.png */; };
 		50E51AD1164DA49E004E5C2F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51AD0164DA49E004E5C2F /* Default@2x.png */; };
 		50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E51AD2164DA49E004E5C2F /* Default-568h@2x.png */; };
-		68C83302164DAD67002C778A /* HWEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C83300164DAD67002C778A /* HWEventViewController.m */; };
-		68C83303164DAD67002C778A /* HWEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68C83301164DAD67002C778A /* HWEventViewController.xib */; };
 		68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8330D164DB0B3002C778A /* CoreLocation.framework */; };
 		DB77A11A164E5EAC0020E28A /* HWPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A119164E5EAC0020E28A /* HWPlace.m */; };
 		DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A11E164E5EB70020E28A /* MyLocation.m */; };
-		EA95FAA6164E599C000DD5B3 /* HWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA95FAA4164E599C000DD5B3 /* HWMainViewController.m */; };
-		EA95FAA7164E599C000DD5B3 /* HWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA95FAA5164E599C000DD5B3 /* HWMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C16F800164E635300C91997 /* HWEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEventViewController.h; sourceTree = "<group>"; };
+		3C16F801164E635300C91997 /* HWEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEventViewController.m; sourceTree = "<group>"; };
+		3C16F802164E635300C91997 /* HWEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEventViewController.xib; sourceTree = "<group>"; };
+		3C16F804164E635300C91997 /* HWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMainViewController.h; sourceTree = "<group>"; };
+		3C16F805164E635300C91997 /* HWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMainViewController.m; sourceTree = "<group>"; };
+		3C16F806164E635300C91997 /* HWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMainViewController.xib; sourceTree = "<group>"; };
+		3C16F808164E635300C91997 /* HWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMapViewController.h; sourceTree = "<group>"; };
+		3C16F809164E635300C91997 /* HWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMapViewController.m; sourceTree = "<group>"; };
+		3C16F80A164E635300C91997 /* HWMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMapViewController.xib; sourceTree = "<group>"; };
+		3C16F80C164E635300C91997 /* HWStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatisticsViewController.h; sourceTree = "<group>"; };
+		3C16F80D164E635300C91997 /* HWStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatisticsViewController.m; sourceTree = "<group>"; };
+		3C16F80E164E635300C91997 /* HWStatisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWStatisticsViewController.xib; sourceTree = "<group>"; };
 		50E51AB8164DA49E004E5C2F /* HackWro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackWro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E51ABC164DA49E004E5C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50E51ABE164DA49E004E5C2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,17 +55,11 @@
 		50E51ACE164DA49E004E5C2F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50E51AD0164DA49E004E5C2F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		50E51AD2164DA49E004E5C2F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		68C832FF164DAD67002C778A /* HWEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEventViewController.h; sourceTree = "<group>"; };
-		68C83300164DAD67002C778A /* HWEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEventViewController.m; sourceTree = "<group>"; };
-		68C83301164DAD67002C778A /* HWEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEventViewController.xib; sourceTree = "<group>"; };
 		68C8330D164DB0B3002C778A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DB77A118164E5EAC0020E28A /* HWPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPlace.h; sourceTree = "<group>"; };
 		DB77A119164E5EAC0020E28A /* HWPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPlace.m; sourceTree = "<group>"; };
 		DB77A11D164E5EB70020E28A /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
 		DB77A11E164E5EB70020E28A /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
-		EA95FAA3164E599C000DD5B3 /* HWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMainViewController.h; sourceTree = "<group>"; };
-		EA95FAA4164E599C000DD5B3 /* HWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMainViewController.m; sourceTree = "<group>"; };
-		EA95FAA5164E599C000DD5B3 /* HWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C16F7FF164E635300C91997 /* HWEventViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C16F800164E635300C91997 /* HWEventViewController.h */,
+				3C16F801164E635300C91997 /* HWEventViewController.m */,
+				3C16F802164E635300C91997 /* HWEventViewController.xib */,
+			);
+			path = HWEventViewController;
+			sourceTree = "<group>";
+		};
+		3C16F803164E635300C91997 /* HWMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C16F804164E635300C91997 /* HWMainViewController.h */,
+				3C16F805164E635300C91997 /* HWMainViewController.m */,
+				3C16F806164E635300C91997 /* HWMainViewController.xib */,
+			);
+			path = HWMainViewController;
+			sourceTree = "<group>";
+		};
+		3C16F807164E635300C91997 /* HWMapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C16F808164E635300C91997 /* HWMapViewController.h */,
+				3C16F809164E635300C91997 /* HWMapViewController.m */,
+				3C16F80A164E635300C91997 /* HWMapViewController.xib */,
+			);
+			path = HWMapViewController;
+			sourceTree = "<group>";
+		};
+		3C16F80B164E635300C91997 /* HWStatisticsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C16F80C164E635300C91997 /* HWStatisticsViewController.h */,
+				3C16F80D164E635300C91997 /* HWStatisticsViewController.m */,
+				3C16F80E164E635300C91997 /* HWStatisticsViewController.xib */,
+			);
+			path = HWStatisticsViewController;
+			sourceTree = "<group>";
+		};
 		50E51AAD164DA49E004E5C2F = {
 			isa = PBXGroup;
 			children = (
@@ -125,22 +175,12 @@
 		68C832FD164DAD67002C778A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				68C832FE164DAD67002C778A /* HWEventViewController */,
+				3C16F7FF164E635300C91997 /* HWEventViewController */,
+				3C16F803164E635300C91997 /* HWMainViewController */,
+				3C16F807164E635300C91997 /* HWMapViewController */,
+				3C16F80B164E635300C91997 /* HWStatisticsViewController */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		68C832FE164DAD67002C778A /* HWEventViewController */ = {
-			isa = PBXGroup;
-			children = (
-				EA95FAA3164E599C000DD5B3 /* HWMainViewController.h */,
-				EA95FAA4164E599C000DD5B3 /* HWMainViewController.m */,
-				EA95FAA5164E599C000DD5B3 /* HWMainViewController.xib */,
-				68C832FF164DAD67002C778A /* HWEventViewController.h */,
-				68C83300164DAD67002C778A /* HWEventViewController.m */,
-				68C83301164DAD67002C778A /* HWEventViewController.xib */,
-			);
-			path = HWEventViewController;
 			sourceTree = "<group>";
 		};
 		DB77A117164E5EAC0020E28A /* Models */ = {
@@ -217,8 +257,10 @@
 				50E51ACF164DA49E004E5C2F /* Default.png in Resources */,
 				50E51AD1164DA49E004E5C2F /* Default@2x.png in Resources */,
 				50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */,
-				68C83303164DAD67002C778A /* HWEventViewController.xib in Resources */,
-				EA95FAA7164E599C000DD5B3 /* HWMainViewController.xib in Resources */,
+				3C16F810164E635300C91997 /* HWEventViewController.xib in Resources */,
+				3C16F812164E635300C91997 /* HWMainViewController.xib in Resources */,
+				3C16F814164E635300C91997 /* HWMapViewController.xib in Resources */,
+				3C16F816164E635300C91997 /* HWStatisticsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,10 +273,12 @@
 			files = (
 				50E51AC9164DA49E004E5C2F /* main.m in Sources */,
 				50E51ACD164DA49E004E5C2F /* HWAppDelegate.m in Sources */,
-				68C83302164DAD67002C778A /* HWEventViewController.m in Sources */,
-				EA95FAA6164E599C000DD5B3 /* HWMainViewController.m in Sources */,
 				DB77A11A164E5EAC0020E28A /* HWPlace.m in Sources */,
 				DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */,
+				3C16F80F164E635300C91997 /* HWEventViewController.m in Sources */,
+				3C16F811164E635300C91997 /* HWMainViewController.m in Sources */,
+				3C16F813164E635300C91997 /* HWMapViewController.m in Sources */,
+				3C16F815164E635300C91997 /* HWStatisticsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
