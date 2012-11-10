@@ -7,8 +7,8 @@
 //
 
 #import "HWEventViewController.h"
-#import "HWStatisticsViewController.h"
 #import "HWMapViewController.h"
+#import "HWStatsViewController.h"
 #import "HWPlace.h"
 
 @interface HWEventViewController ()
@@ -45,7 +45,6 @@
     self.popupWebView.opaque = NO;
     [self hideSubviewsBackground:self.popupWebView];
     [self hideSubviewsBackground:self.webView];
-
     [self.scenarioManager runScenario];
 
 }
@@ -177,7 +176,7 @@
 }
 
 - (void)scenarioManager:(ScenarioManager *)scenarioManager scenarioCompleted:(Scenario *)scenario {
-    HWStatisticsViewController *stats = [[HWStatisticsViewController alloc] initWithNibName:@"HWStatisticsViewController" bundle:nil];
+    HWStatsViewController *stats = [[HWStatsViewController alloc] initWithNibName:@"HWStatsViewController" bundle:nil andObjectives:scenario.objectives];
     [self.navigationController pushViewController:stats animated:YES];
 }
 

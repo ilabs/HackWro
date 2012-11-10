@@ -9,11 +9,12 @@
 #import "ScenarioManager.h"
 #import "Parser.h"
 
-#define LOCATION_TOLERANCE 0.0005
+#define LOCATION_TOLERANCE 10.0
 
 @interface ScenarioManager (Hidden)
 
 - (void)loadObjectiveAtIndex:(NSUInteger)index;
+- (BOOL)checkReachCondition:(CLLocation *)location;
 
 @end
 
@@ -90,6 +91,10 @@
             event.didOccur = YES;
         }
     }
+    
+    if(lastLocation) {
+        [self checkReachCondition:lastLocation];
+    }
 }
 
 - (void)loadObjectiveAtIndex:(NSUInteger)index {
@@ -116,9 +121,25 @@
 #pragma mark - CLLocationManagerDelegate methods
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
-    double distance = [currentObjective.targetLocation distanceFromCLLocation:newLocation];
-    
     [self.delegate scenarioManager:self locationUpdated:newLocation];
+    lastLocation = newLocation;
+    
+    if(![self checkReachCondition:newLocation]) {
+        for(Event *event in currentObjective.events) {
+            if(event.didOccur) {
+                continue;
+            }
+            
+            if((event.type == EVENT_TYPE_LOCATION_MESSAGE) && ([event.location distanceFromCLLocation:newLocation] <= LOCATION_TOLERANCE)) {
+                [self.delegate scenarioManager:self eventOccurred:event];
+                event.didOccur = YES;
+            }
+        }
+    }
+}
+
+- (BOOL)checkReachCondition:(CLLocation *)location {
+    double distance = [currentObjective.targetLocation distanceFromCLLocation:location];
     
     if(distance <= LOCATION_TOLERANCE) {
         if(currentObjective.targetLocation.reachEvent) {
@@ -135,18 +156,11 @@
             [self loadObjectiveAtIndex:(currentObjectiveIndex + 1)];
             [locationManager startUpdatingLocation];
         }
-    } else {
-        for(Event *event in currentObjective.events) {
-            if(event.didOccur) {
-                continue;
-            }
-            
-            if((event.type == EVENT_TYPE_LOCATION_MESSAGE) && ([event.location distanceFromCLLocation:newLocation] <= LOCATION_TOLERANCE)) {
-                [self.delegate scenarioManager:self eventOccurred:event];
-                event.didOccur = YES;
-            }
-        }
+        
+        return YES;
     }
+    
+    return NO;
 }
 
 @end

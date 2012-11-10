@@ -11,8 +11,6 @@
 		3C16F810164E635300C91997 /* HWEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F802164E635300C91997 /* HWEventViewController.xib */; };
 		3C16F813164E635300C91997 /* HWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F809164E635300C91997 /* HWMapViewController.m */; };
 		3C16F814164E635300C91997 /* HWMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F80A164E635300C91997 /* HWMapViewController.xib */; };
-		3C16F815164E635300C91997 /* HWStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F80D164E635300C91997 /* HWStatisticsViewController.m */; };
-		3C16F816164E635300C91997 /* HWStatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F80E164E635300C91997 /* HWStatisticsViewController.xib */; };
 		3C16F86C164E83E000C91997 /* HWObjectiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F86B164E83E000C91997 /* HWObjectiveCell.m */; };
 		3C16F86F164E840500C91997 /* HWObjectiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C16F86E164E840500C91997 /* HWObjectiveCell.xib */; };
 		50E51ABD164DA49E004E5C2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51ABC164DA49E004E5C2F /* UIKit.framework */; };
@@ -39,6 +37,8 @@
 		50E51B11164E655E004E5C2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E51B10164E655E004E5C2F /* MapKit.framework */; };
 		50E51B16164E672E004E5C2F /* ScenarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51B14164E672E004E5C2F /* ScenarioViewController.m */; };
 		50E51B17164E672E004E5C2F /* ScenarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B15164E672E004E5C2F /* ScenarioViewController.xib */; };
+		50E51B49164E93CA004E5C2F /* HWStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E51B47164E93CA004E5C2F /* HWStatsViewController.m */; };
+		50E51B4A164E93CA004E5C2F /* HWStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E51B48164E93CA004E5C2F /* HWStatsViewController.xib */; };
 		687AC05E164E79CD00AF6E81 /* HWPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 687AC05D164E79CD00AF6E81 /* HWPlace.m */; };
 		68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8330D164DB0B3002C778A /* CoreLocation.framework */; };
 		DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB77A11E164E5EB70020E28A /* MyLocation.m */; };
@@ -53,9 +53,6 @@
 		3C16F808164E635300C91997 /* HWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMapViewController.h; sourceTree = "<group>"; };
 		3C16F809164E635300C91997 /* HWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMapViewController.m; sourceTree = "<group>"; };
 		3C16F80A164E635300C91997 /* HWMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMapViewController.xib; sourceTree = "<group>"; };
-		3C16F80C164E635300C91997 /* HWStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatisticsViewController.h; sourceTree = "<group>"; };
-		3C16F80D164E635300C91997 /* HWStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatisticsViewController.m; sourceTree = "<group>"; };
-		3C16F80E164E635300C91997 /* HWStatisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWStatisticsViewController.xib; sourceTree = "<group>"; };
 		3C16F86A164E83E000C91997 /* HWObjectiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWObjectiveCell.h; sourceTree = "<group>"; };
 		3C16F86B164E83E000C91997 /* HWObjectiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWObjectiveCell.m; sourceTree = "<group>"; };
 		3C16F86E164E840500C91997 /* HWObjectiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWObjectiveCell.xib; sourceTree = "<group>"; };
@@ -98,6 +95,9 @@
 		50E51B13164E672E004E5C2F /* ScenarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenarioViewController.h; sourceTree = "<group>"; };
 		50E51B14164E672E004E5C2F /* ScenarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenarioViewController.m; sourceTree = "<group>"; };
 		50E51B15164E672E004E5C2F /* ScenarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScenarioViewController.xib; sourceTree = "<group>"; };
+		50E51B46164E93CA004E5C2F /* HWStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWStatsViewController.h; sourceTree = "<group>"; };
+		50E51B47164E93CA004E5C2F /* HWStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWStatsViewController.m; sourceTree = "<group>"; };
+		50E51B48164E93CA004E5C2F /* HWStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWStatsViewController.xib; sourceTree = "<group>"; };
 		687AC05C164E79CD00AF6E81 /* HWPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPlace.h; sourceTree = "<group>"; };
 		687AC05D164E79CD00AF6E81 /* HWPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPlace.m; sourceTree = "<group>"; };
 		68C8330D164DB0B3002C778A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -147,12 +147,12 @@
 		3C16F80B164E635300C91997 /* HWStatisticsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3C16F80C164E635300C91997 /* HWStatisticsViewController.h */,
-				3C16F80D164E635300C91997 /* HWStatisticsViewController.m */,
-				3C16F80E164E635300C91997 /* HWStatisticsViewController.xib */,
 				3C16F86A164E83E000C91997 /* HWObjectiveCell.h */,
 				3C16F86B164E83E000C91997 /* HWObjectiveCell.m */,
 				3C16F86E164E840500C91997 /* HWObjectiveCell.xib */,
+				50E51B46164E93CA004E5C2F /* HWStatsViewController.h */,
+				50E51B47164E93CA004E5C2F /* HWStatsViewController.m */,
+				50E51B48164E93CA004E5C2F /* HWStatsViewController.xib */,
 			);
 			path = HWStatisticsViewController;
 			sourceTree = "<group>";
@@ -383,13 +383,13 @@
 				50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */,
 				3C16F810164E635300C91997 /* HWEventViewController.xib in Resources */,
 				3C16F814164E635300C91997 /* HWMapViewController.xib in Resources */,
-				3C16F816164E635300C91997 /* HWStatisticsViewController.xib in Resources */,
 				50E51B0C164E652C004E5C2F /* miliony.xml in Resources */,
 				50E51B0D164E652C004E5C2F /* template.xml in Resources */,
 				50E51B0E164E652C004E5C2F /* test.xml in Resources */,
 				50E51B17164E672E004E5C2F /* ScenarioViewController.xib in Resources */,
 				EA4B5FE2164E6BD10094DAAB /* HWMainViewController.xib in Resources */,
 				3C16F86F164E840500C91997 /* HWObjectiveCell.xib in Resources */,
+				50E51B4A164E93CA004E5C2F /* HWStatsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +405,6 @@
 				DB77A11F164E5EB70020E28A /* MyLocation.m in Sources */,
 				3C16F80F164E635300C91997 /* HWEventViewController.m in Sources */,
 				3C16F813164E635300C91997 /* HWMapViewController.m in Sources */,
-				3C16F815164E635300C91997 /* HWStatisticsViewController.m in Sources */,
 				50E51B03164E652C004E5C2F /* NSDictionary+Additions.m in Sources */,
 				50E51B04164E652C004E5C2F /* NSMutableDictionary+Additions.m in Sources */,
 				50E51B05164E652C004E5C2F /* NSObject+Parsed.m in Sources */,
@@ -419,6 +418,7 @@
 				EA4B5FE1164E6BD10094DAAB /* HWMainViewController.m in Sources */,
 				687AC05E164E79CD00AF6E81 /* HWPlace.m in Sources */,
 				3C16F86C164E83E000C91997 /* HWObjectiveCell.m in Sources */,
+				50E51B49164E93CA004E5C2F /* HWStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 #import "HWMainViewController.h"
 #import "ScenarioManager.h"
 #import "HWEventViewController.h"
-
+#import "HWStatsViewController.h"
 @interface HWMainViewController ()
 
 @end

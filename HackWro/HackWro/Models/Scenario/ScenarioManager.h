@@ -23,6 +23,7 @@
     BOOL isPlaying;
     NSTimer *objectiveTimer;
     NSUInteger timeLeft, timeElapsed;
+    CLLocation *lastLocation;
 }
 
 - (Scenario *)loadScenario:(NSString *)path;
