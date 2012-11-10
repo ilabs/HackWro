@@ -19,6 +19,8 @@
 		68C83302164DAD67002C778A /* HWEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C83300164DAD67002C778A /* HWEventViewController.m */; };
 		68C83303164DAD67002C778A /* HWEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68C83301164DAD67002C778A /* HWEventViewController.xib */; };
 		68C8330E164DB0B3002C778A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8330D164DB0B3002C778A /* CoreLocation.framework */; };
+		EA95FAA6164E599C000DD5B3 /* HWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA95FAA4164E599C000DD5B3 /* HWMainViewController.m */; };
+		EA95FAA7164E599C000DD5B3 /* HWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA95FAA5164E599C000DD5B3 /* HWMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		68C83300164DAD67002C778A /* HWEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEventViewController.m; sourceTree = "<group>"; };
 		68C83301164DAD67002C778A /* HWEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWEventViewController.xib; sourceTree = "<group>"; };
 		68C8330D164DB0B3002C778A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EA95FAA3164E599C000DD5B3 /* HWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMainViewController.h; sourceTree = "<group>"; };
+		EA95FAA4164E599C000DD5B3 /* HWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMainViewController.m; sourceTree = "<group>"; };
+		EA95FAA5164E599C000DD5B3 /* HWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,9 @@
 		68C832FE164DAD67002C778A /* HWEventViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EA95FAA3164E599C000DD5B3 /* HWMainViewController.h */,
+				EA95FAA4164E599C000DD5B3 /* HWMainViewController.m */,
+				EA95FAA5164E599C000DD5B3 /* HWMainViewController.xib */,
 				68C832FF164DAD67002C778A /* HWEventViewController.h */,
 				68C83300164DAD67002C778A /* HWEventViewController.m */,
 				68C83301164DAD67002C778A /* HWEventViewController.xib */,
@@ -184,6 +192,7 @@
 				50E51AD1164DA49E004E5C2F /* Default@2x.png in Resources */,
 				50E51AD3164DA49E004E5C2F /* Default-568h@2x.png in Resources */,
 				68C83303164DAD67002C778A /* HWEventViewController.xib in Resources */,
+				EA95FAA7164E599C000DD5B3 /* HWMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +206,7 @@
 				50E51AC9164DA49E004E5C2F /* main.m in Sources */,
 				50E51ACD164DA49E004E5C2F /* HWAppDelegate.m in Sources */,
 				68C83302164DAD67002C778A /* HWEventViewController.m in Sources */,
+				EA95FAA6164E599C000DD5B3 /* HWMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

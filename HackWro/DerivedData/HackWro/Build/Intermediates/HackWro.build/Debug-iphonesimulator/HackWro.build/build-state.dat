@@ -1,0 +1,411 @@
+THackWro
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Info.plist HackWro/HackWro-Info.plist
+cProcessPCH /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch.pth HackWro/HackWro-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/main.o /Users/marek/HackWro/HackWro/HackWro/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWAppDelegate.o /Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWEventViewController.o /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWMainViewController.o /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro normal i386
+cGenerateDSYMFile /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app.dSYM /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro
+cCopyStringsFile /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/en.lproj/InfoPlist.strings HackWro/en.lproj/InfoPlist.strings
+cCpResource HackWro/Default.png DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default.png
+cCpResource HackWro/Default@2x.png DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default@2x.png
+cCpResource HackWro/Default-568h@2x.png DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default-568h@2x.png
+cCompileXIB /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.xib
+cCompileXIB /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.xib
+cTouch /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000504916AD0000000000000110
+t1346967213
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506618310000000000228FD0
+t1348868145
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c0000000050661832000000000009C220
+t1348868146
+s639520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005066183D00000000003DCEF0
+t1348868157
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000005066183E00000000000015F7
+t1348868158
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c00000000506618750000000000000E8D
+t1348868213
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506618790000000000AB3D60
+t1348868217
+s11222368
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/Availability.h
+c00000000506619100000000000001B54
+t1348868368
+s6996
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWAppDelegate.o
+t1352540913
+s90080
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWEventViewController.o
+t1352540913
+s111440
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWMainViewController.o
+t1352540927
+s80148
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HackWro.LinkFileList
+c00000000509E22F00000000000000272
+t1352540912
+s626
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/MainViewController.o
+t2
+s0
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/main.o
+t1352540913
+s3268
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch.pth
+t1352540912
+s4840464
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app
+t1352540930
+s374
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app.dSYM
+t1352540928
+s102
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default-568h@2x.png
+t1352540928
+s18594
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default.png
+t1352540928
+s6540
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default@2x.png
+t1352540928
+s16107
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HWEventViewController.nib
+t1352540928
+s3542
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HWMainViewController.nib
+t1352540930
+s1928
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro
+t1352540927
+s47676
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Info.plist
+t1352540912
+s795
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/MainViewController.nib
+t2
+s0
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/PkgInfo
+t1352540912
+s8
+
+N/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/en.lproj/InfoPlist.strings
+t1352540928
+s42
+
+N/Users/marek/HackWro/HackWro/HackWro/Default-568h@2x.png
+c00000000509E1EA300000000000048A2
+t1352539811
+s18594
+
+N/Users/marek/HackWro/HackWro/HackWro/Default.png
+c00000000509E1EA3000000000000198C
+t1352539811
+s6540
+
+N/Users/marek/HackWro/HackWro/HackWro/Default@2x.png
+c00000000509E1EA30000000000003EEB
+t1352539811
+s16107
+
+N/Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.h
+c00000000509E229E00000000000001A5
+t1352540830
+s421
+
+N/Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.m
+c00000000509E23250000000000000931
+t1352540965
+s2353
+
+N/Users/marek/HackWro/HackWro/HackWro/HackWro-Prefix.pch
+c00000000509E1EA3000000000000013D
+t1352539811
+s317
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.h
+c00000000509E1EA3000000000000042F
+t1352539811
+s1071
+
+N/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.m
+c00000000509E1EA30000000000000F3E
+t1352539811
+s3902
+
+N/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.xib
+c00000000509E1EA30000000000007258
+t1352539811
+s29272
+
+N/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.h
+c00000000509E222F00000000000001E0
+t1352540719
+s480
+
+N/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m
+c00000000509E22FF00000000000006C5
+t1352540927
+s1733
+
+N/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.xib
+c00000000509E22AF000000000000377D
+t1352540847
+s14205
+
+N/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/MainViewController.m
+c00000000509E210C00000000000006BF
+t1352540428
+s1727
+
+N/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/MainViewController.xib
+c00000000509DB5BF0000000000003777
+t1352512959
+s14199
+
+N/Users/marek/HackWro/HackWro/HackWro/en.lproj/InfoPlist.strings
+c00000000509E1EA3000000000000002D
+t1352539811
+s45
+
+N/Users/marek/HackWro/HackWro/HackWro/main.m
+c00000000509E225C0000000000000158
+t1352540764
+s344
+
+NHackWro/HackWro-Info.plist
+c00000000509E1EA30000000000000493
+t1352539811
+s1171
+
+CBuild AST from /Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.m
+r0
+
+CBuild AST from /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.m
+r0
+
+CBuild AST from /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m
+r0
+
+CBuild AST from /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/MainViewController.m
+r0
+
+CBuild AST from /Users/marek/HackWro/HackWro/HackWro/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies7de624a55a4eb641^605925a55a4eb641^---0#1#0#--18"Check dependencies36"2853A14C-14DB-45CA-B713-BBE255055C19-
+
+CCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWAppDelegate.o /Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374233765.188283
+e374233765.425774
+r1
+xCompileC
+xDerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWAppDelegate.o
+x/Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.ma85530a55a4eb641^78096ea55a4eb641^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.m0000000000000000^3795"CompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWAppDelegate.o HackWro/HWAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/marek/HackWro/HackWro    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-generated-files.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-own-target-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-all-target-headers.hmap -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-project-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources/i386 -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources -F/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator -include /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch -MMD -MT dependencies -MF /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWAppDelegate.d --serialize-diagnostics /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWAppDelegate.dia -c /Users/marek/HackWro/HackWro/HackWro/HWAppDelegate.m -o /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWAppDelegate.o36"605C6584-9D80-4B06-92E5-D6D0C483CC76-
+
+CCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWEventViewController.o /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374233713.084263
+e374233713.261253
+r1
+xCompileC
+xDerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWEventViewController.o
+x/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.m6bb715715a4eb641^28f442715a4eb641^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.m0000000000000000^3919"CompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWEventViewController.o HackWro/ViewControllers/HWEventViewController/HWEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/marek/HackWro/HackWro    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-generated-files.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-own-target-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-all-target-headers.hmap -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-project-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources/i386 -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources -F/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator -include /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch -MMD -MT dependencies -MF /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWEventViewController.d --serialize-diagnostics /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWEventViewController.dia -c /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.m -o /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWEventViewController.o36"F41FC596-1CA9-4EE3-A812-326D138417F1-
+
+CCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWMainViewController.o /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374233727.742299
+e374233727.856741
+r1
+xCompileC
+xDerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWMainViewController.o
+x/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m:43:5: warning: property access result unused - getters should not be used for side effects [-Wunused-value]
+o    self.labelText.sizeToFit;
+o    ^~~~~~~~~~~~~~~~~~~~~~~~
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.me526be7f5a4eb641^88bddc7f5a4eb641^-286"/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m:43:5: warning: property access result unused - getters should not be used for side effects [-Wunused-value]    self.labelText.sizeToFit;    ^~~~~~~~~~~~~~~~~~~~~~~~1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@75"Property access result unused - getters should not be used for side effects-374233727#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@113"file://localhost/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m0000000000000000^42#4#42#4#1135#0#19"Unused Entity Issue1(3@113"file://localhost/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m0000000000000000^42#4#42#28#1135#15#-0#0#0#-19%DVTDocumentLocation4@113"file://localhost/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m0000000000000000^3913"CompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWMainViewController.o HackWro/ViewControllers/HWEventViewController/HWMainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/marek/HackWro/HackWro    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-generated-files.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-own-target-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-all-target-headers.hmap -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-project-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources/i386 -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources -F/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator -include /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch -MMD -MT dependencies -MF /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWMainViewController.d --serialize-diagnostics /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWMainViewController.dia -c /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.m -o /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HWMainViewController.o36"5A04E403-DFD5-48C3-AFB5-96F6A688C8AE-
+
+CCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/MainViewController.o /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/main.o /Users/marek/HackWro/HackWro/HackWro/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374233713.041096
+e374233713.082985
+r1
+xCompileC
+xDerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/main.o
+x/Users/marek/HackWro/HackWro/HackWro/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Compile /Users/marek/HackWro/HackWro/HackWro/main.mffb30a715a4eb641^be4f15715a4eb641^---0#0#0#-19%DVTDocumentLocation2@59"file://localhost/Users/marek/HackWro/HackWro/HackWro/main.m0000000000000000^3741"CompileC DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/main.o HackWro/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/marek/HackWro/HackWro    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-generated-files.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-own-target-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-all-target-headers.hmap -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-project-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources/i386 -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources -F/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator -include /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch -MMD -MT dependencies -MF /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/main.dia -c /Users/marek/HackWro/HackWro/HackWro/main.m -o /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/main.o36"7AD9C979-1765-4320-8178-87ABC1CB7E2D-
+
+CCompileXIB /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.xib
+s374233728.099618
+e374233728.273933
+r1
+xCompileXIB
+x/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compiling /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.xib529a19805a4eb641^72fb49805a4eb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.xib0000000000000000^983"CompileXIB HackWro/ViewControllers/HWEventViewController/HWEventViewController.xib    cd /Users/marek/HackWro/HackWro    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HWEventViewController.nib /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWEventViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"C5118C55-27F0-48C0-B880-B41B0F32AD83-
+
+CCompileXIB /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.xib
+s374233728.122804
+e374233730.218712
+r1
+xCompileXIB
+x/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.xib
+o2012-11-10 10:48:49.851 Interface Builder Cocoa Touch Tool[1723:f07] CFPreferences: user home directory at file://localhost/Users/marek/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compiling /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.xib20981f805a4eb641^be1638825a4eb641^-237"2012-11-10 10:48:49.851 Interface Builder Cocoa Touch Tool[1723:f07] CFPreferences: user home directory at file://localhost/Users/marek/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.xib0000000000000000^980"CompileXIB HackWro/ViewControllers/HWEventViewController/HWMainViewController.xib    cd /Users/marek/HackWro/HackWro    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HWMainViewController.nib /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/HWMainViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"46EB0165-1AD3-4B44-B261-1AE7403218F7-
+
+CCompileXIB /Users/marek/HackWro/HackWro/HackWro/ViewControllers/HWEventViewController/MainViewController.xib
+r0
+
+CCopyStringsFile /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/en.lproj/InfoPlist.strings HackWro/en.lproj/InfoPlist.strings
+s374233728.059103
+e374233728.120895
+r1
+xCopyStringsFile
+x/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/en.lproj/InfoPlist.strings
+xHackWro/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Copy HackWro/en.lproj/InfoPlist.stringsc17210805a4eb641^f8f91f805a4eb641^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/marek/HackWro/HackWro/HackWro/en.lproj/InfoPlist.strings0000000000000000^613"CopyStringsFile DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/en.lproj/InfoPlist.strings HackWro/en.lproj/InfoPlist.strings    cd /Users/marek/HackWro/HackWro    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/en.lproj -- HackWro/en.lproj/InfoPlist.strings36"3CE13284-96E6-497C-B0F6-027162B7EE2C-
+
+CCpResource HackWro/Default-568h@2x.png DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default-568h@2x.png
+s374233728.095586
+e374233728.098337
+r1
+xCpResource
+xHackWro/Default-568h@2x.png
+xDerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Copy DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default-568h@2x.png109318805a4eb641^afcd1e805a4eb641^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default-568h@2x.png000000000080d041^632"CpResource "HackWro/Default-568h@2x.png" "DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default-568h@2x.png"    cd /Users/marek/HackWro/HackWro    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/marek/HackWro/HackWro/HackWro/Default-568h@2x.png" /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app36"931169F9-C20E-4232-96DD-3A3A485D6447-
+
+CCpResource HackWro/Default.png DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default.png
+s374233728.064525
+e374233728.078515
+r1
+xCpResource
+xHackWro/Default.png
+xDerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Copy DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default.pngdae612805a4eb641^7f4f1c805a4eb641^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default.png000000000080d041^602"CpResource HackWro/Default.png DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default.png    cd /Users/marek/HackWro/HackWro    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/marek/HackWro/HackWro/HackWro/Default.png /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app36"45F3BCD5-7653-4A9D-9E39-6D095E761271-
+
+CCpResource HackWro/Default@2x.png DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default@2x.png
+s374233728.079797
+e374233728.082598
+r1
+xCpResource
+xHackWro/Default@2x.png
+xDerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Copy DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default@2x.png998314805a4eb641^dec61e805a4eb641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default@2x.png000000000080d041^617"CpResource "HackWro/Default@2x.png" "DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Default@2x.png"    cd /Users/marek/HackWro/HackWro    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/marek/HackWro/HackWro/HackWro/Default@2x.png" /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app36"1F9CF7CA-1AE1-4F5D-B6E8-A4D9E0A52E70-
+
+CGenerateDSYMFile /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app.dSYM /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro
+s374233765.519628
+e374233765.558054
+r1
+xGenerateDSYMFile
+x/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app.dSYM
+x/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Generating /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app.dSYM702385a55a4eb641^f62391a55a4eb641^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app.dSYM/0000000000000000^711"GenerateDSYMFile DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app.dSYM DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro    cd /Users/marek/HackWro/HackWro    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro -o /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app.dSYM36"9B4B431A-86CC-4791-A2EE-E739A126497C-
+
+CLd /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro normal i386
+s374233765.432181
+e374233765.501657
+r1
+xLd
+x/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Link /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro02bb6ea55a4eb641^d02a83a55a4eb641^---0#0#0#--1271"Ld DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro normal i386    cd /Users/marek/HackWro/HackWro    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator -F/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator -filelist /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/Objects-normal/i386/HackWro.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework CoreLocation -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/HackWro36"87E4AB92-997C-4BC9-B72A-6BA124C84234-
+
+CProcessInfoPlistFile /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Info.plist HackWro/HackWro-Info.plist
+s374233712.524051
+e374233712.530589
+r1
+xProcessInfoPlistFile
+x/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Info.plist
+xHackWro/HackWro-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Process HackWro/HackWro-Info.plist454786705a4eb641^0de287705a4eb641^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/marek/HackWro/HackWro/HackWro/HackWro-Info.plist0000000000000000^707"ProcessInfoPlistFile DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Info.plist HackWro/HackWro-Info.plist    cd /Users/marek/HackWro/HackWro    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility HackWro/HackWro-Info.plist -genpkginfo /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app/Info.plist36"865F75BE-EC4B-4FED-BA66-D757A51E4C72-
+
+CProcessPCH /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch.pth HackWro/HackWro-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374233712.538688
+e374233713.034060
+r1
+xProcessPCH
+x/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch.pth
+xHackWro/HackWro-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile HackWro/HackWro-Prefix.pchb60e8a705a4eb641^1cb708715a4eb641^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/marek/HackWro/HackWro/HackWro/HackWro-Prefix.pch0000000000000000^3646"ProcessPCH DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch.pth HackWro/HackWro-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/marek/HackWro/HackWro    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-generated-files.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-own-target-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-all-target-headers.hmap -iquote /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/HackWro-project-headers.hmap -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources/i386 -I/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/HackWro.build/Debug-iphonesimulator/HackWro.build/DerivedSources -F/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch.dia -c /Users/marek/HackWro/HackWro/HackWro/HackWro-Prefix.pch -o /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch.pth -MMD -MT dependencies -MF /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Intermediates/PrecompiledHeaders/HackWro-Prefix-ectpbpzwynjhumdoiftbjfxchbvp/HackWro-Prefix.pch.d36"A136413C-2E54-487F-8580-7D9AFE2DA907-
+
+CProcessPCH /Users/marek/HackWro/HackWro/DerivedData/HackWro/Index/PrecompiledHeaders/HackWro-Prefix-glmxrqebzoukukcmzbeacetqwrxz_ast/HackWro-Prefix.pch.pth HackWro/HackWro-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app
+s374233765.593483
+e374233765.623388
+r1
+xTouch
+x/Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Touch /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.appd10298a55a4eb641^ebe19fa55a4eb641^---0#0#0#--426"Touch DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app    cd /Users/marek/HackWro/HackWro    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/marek/HackWro/HackWro/DerivedData/HackWro/Build/Products/Debug-iphonesimulator/HackWro.app36"57D75AA8-046D-4A16-A403-ADDB38831631-
+
