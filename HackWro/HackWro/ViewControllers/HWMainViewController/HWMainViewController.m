@@ -7,6 +7,8 @@
 //
 
 #import "HWMainViewController.h"
+#import "ScenarioManager.h"
+#import "HWEventViewController.h"
 
 @interface HWMainViewController ()
 
@@ -21,6 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        scenarioManager = [ScenarioManager new];
         // Custom initialization
     }
     return self;
@@ -30,19 +33,27 @@
 {
     [super viewDidLoad];
     
+    self.webView.backgroundColor = [UIColor clearColor];
+    self.webView.opaque = NO;
+    
+    for(UIView *subview in self.webView.subviews) {
+        if([subview isKindOfClass:[UIScrollView class]]) {
+            subview.backgroundColor = [UIColor clearColor];
+            subview.opaque = NO;
+            break;
+        }
+    }
+    
+    Scenario *scenario = [scenarioManager loadScenario:[[NSBundle mainBundle] pathForResource:@"miliony" ofType:@"xml"]];
+    
+    
     // load navigationBar
     self.navigationBar.topItem.title = @"Nazwa";
     self.navigationBar.topItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Dalej" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClicked)];
     self.navigationBar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonClicked)];
-    
+ 
+    [self.webView loadHTMLString:scenario.scenarioDescription baseURL:[[NSBundle mainBundle] resourceURL]];
 
-    self.labelText.text = @"tu jakis opis ";
-    
-    
-    self.labelText.numberOfLines = 0;
-    self.labelText.sizeToFit;
-    self.scrollView.contentOffset = CGPointZero;
-    self.scrollView.contentSize = self.labelText.frame.size;
     
     
 	// Do any additional setup after loading the view.
@@ -56,7 +67,7 @@
 
 - (void)viewDidUnload {
     [self setNavigationBar:nil];
-    [self setLabelText:nil];
+    [self setWebView:nil];
     [super viewDidUnload];
 }
 
@@ -65,7 +76,8 @@
 
 - (void)rightBarButtonClicked
 {
-    NSLog(@"right");
+    HWEventViewController *event = [[HWEventViewController alloc]initWithNibName:@"HWEventViewController" bundle:nil andScenarioManager:scenarioManager];
+    [self.navigationController pushViewController:event animated:YES];
 }
 
 - (void)leftBarButtonClicked

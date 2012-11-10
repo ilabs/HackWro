@@ -7,6 +7,9 @@
 //
 
 #import "HWEventViewController.h"
+#import "HWStatisticsViewController.h"
+#import "HWMapViewController.h"
+#import "HWPlace.h"
 
 @interface HWEventViewController ()
 
@@ -14,14 +17,38 @@
 
 @implementation HWEventViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andScenarioManager:(ScenarioManager*)manager {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.scenarioManager = manager;
+    }
+    return self;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        locationManager = [[CLLocationManager alloc] init];
     }
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+    self.webView.backgroundColor = [UIColor clearColor];
+    self.webView.opaque = YES;
+    self.popupWebView.backgroundColor = [UIColor clearColor];
+    self.popupWebView.opaque = NO;
+    [self hideSubviewsBackground:self.popupWebView];
+    [self hideSubviewsBackground:self.webView];
+
+    
+    
+    [self.scenarioManager runScenario];
+
 }
 
 - (void)hideSubviewsBackground:(UIView*)mainView {
@@ -29,23 +56,6 @@
         view.backgroundColor = [UIColor clearColor];
         view.opaque = NO;
     }
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
-
-    self.webView.backgroundColor = [UIColor clearColor];
-    self.webView.opaque = YES;
-    self.popupWebView.backgroundColor = [UIColor clearColor];
-    self.popupWebView.opaque = NO;
-    [self hideSubviewsBackground:self.popupWebView];
-    [self hideSubviewsBackground:self.webView];
-    
-    // test
-    [self startTimer:10];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,6 +74,13 @@
     }
 }
 
+- (void)timerUpdate:(NSNotification*)notif {
+    if ([finishDate timeIntervalSinceNow] <= 0.0) {
+        [timer invalidate];
+        [self questFailed:nil];
+    } else
+        self.timeLabel.text = [self stringWithTimeInterval:[finishDate timeIntervalSinceNow]];
+}
 
 - (NSString*)stringWithTimeInterval:(NSTimeInterval)interval {
     NSTimeInterval time = interval;
@@ -80,22 +97,11 @@
     return [NSString stringWithFormat:@"%ds", (int)time];
 }
 
-
-- (void)timerUpdate:(NSNotification*)notif {
-    if ([finishDate timeIntervalSinceNow] <= 0.0) {
-        [timer invalidate];
-        [self questFailed:nil];
-    } else
-        self.timeLabel.text = [self stringWithTimeInterval:[finishDate timeIntervalSinceNow]];
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    CLLocation *currentLocation = [locations lastObject];
-    self.distanceLabel.text = [NSString stringWithFormat:@"%.0f m", [currentLocation distanceFromLocation:finishLocaton]];
-}
-
 - (IBAction)showMap:(id)sender {
-
+    HWPlace *place = [[HWPlace alloc] init];
+    place.location = [[CLLocation alloc] initWithLatitude:finishLocaton.coordinates.latitude longitude:finishLocaton.coordinates.longitude];
+   // place.name = self.
+    HWMapViewController *mapViewController = [[HWMapViewController alloc] initWithNibName:@"HWMapViewController" bundle:nil];
 }
 
 - (IBAction)hidePopup:(id)sender {
@@ -130,6 +136,45 @@
     } completion:^(BOOL finished) {
         [self.failView removeFromSuperview];
     }];
+}
+
+- (void)scenarioManager:(ScenarioManager *)scenarioManager didLoadObjective:(Objective *)objective {
+    [self startTimer:objective.timeLimit];
+    [self.webView loadHTMLString:objective.objectiveDescription baseURL:nil];
+    finishLocaton = objective.targetLocation;
+}
+
+- (void)scenarioManager:(ScenarioManager *)scenarioManager didFailWithError:(NSError *)error {
+    
+}
+
+- (void)scenarioManager:(ScenarioManager *)scenarioManager timeLeftChanged:(NSUInteger)timeLeft {
+    finishDate = [NSDate dateWithTimeIntervalSinceNow:timeLeft];
+}
+
+- (void)scenarioManager:(ScenarioManager *)scenarioManager objectiveFailed:(Objective *)objective {
+    [self questFailed:nil];
+}
+
+- (void)scenarioManager:(ScenarioManager *)scenarioManager eventOccurred:(Event *)event {
+    [self.popupWebView loadHTMLString:event.content baseURL:nil];
+    [self showPopup:nil];
+}
+
+- (void)scenarioManager:(ScenarioManager *)scenarioManager locationUpdated:(CLLocation *)currentLocation {
+    MKMapPoint p1 = MKMapPointForCoordinate(currentLocation.coordinate);
+    CLLocationCoordinate2D loc;
+    loc.latitude = finishLocaton.coordinates.latitude;
+    loc.longitude = finishLocaton.coordinates.longitude;
+    MKMapPoint p2 = MKMapPointForCoordinate(loc);
+    CLLocationDistance dist = MKMetersBetweenMapPoints(p1, p2);
+    self.distanceLabel.text = [NSString stringWithFormat:@"%.0f m", dist];
+
+}
+
+- (void)scenarioManager:(ScenarioManager *)scenarioManager scenarioCompleted:(Scenario *)scenario {
+    HWStatisticsViewController *stats = [[HWStatisticsViewController alloc] initWithNibName:@"HWStatisticsViewController" bundle:nil];
+    [self.navigationController pushViewController:stats animated:YES];
 }
 
 @end
