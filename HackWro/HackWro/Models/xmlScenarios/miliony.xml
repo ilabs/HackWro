@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <scenario>
 	<description><![CDATA[
-		 <h1>80 milionów: skok na bank</h1>
-		<div class="image"></div>
-		<div class="description">
-		<p> 	Dolny Śląsk, jesień 1981 roku. Po serii prowokacji SB, konfrontacja opozycji z komunistami wydaje się nieunikniona. Tuż przed ogłoszeniem stanu wojennego, młodzi działacze Solidarności postanawiają zagrać va banque i organizują brawurową akcję wyprowadzenia z wrocławskiego banku 80 milionów związkowych pieniędzy, zanim konto zostanie zablokowane. Funkcjonariusze Służby Bezpieczeństwa podążają za nimi krok w krok. Rozpoczyna się pasjonująca rozgrywka, w którą zostają zaangażowani duchowni i... cinkciarze. Każda ze stron ma asy w rękawie.
+        <body style="margin:0px;padding:0px;">
+        <img src="http://www.recenzenci.pl/blog/wp-content/uploads/2011/10/80_milionow_zapowiedz.jpg" width=320>
+        <div style="padding-left:20px;padding-right:20px;">
+        <h1 style="font-name:Helvetica">80 milionów: skok na bank</h1>
+		<p style="font-name:Helvetica;color:#575757"> 	Dolny Śląsk, jesień 1981 roku. Po serii prowokacji SB, konfrontacja opozycji z komunistami wydaje się nieunikniona. Tuż przed ogłoszeniem stanu wojennego, młodzi działacze Solidarności postanawiają zagrać va banque i organizują brawurową akcję wyprowadzenia z wrocławskiego banku 80 milionów związkowych pieniędzy, zanim konto zostanie zablokowane. Funkcjonariusze Służby Bezpieczeństwa podążają za nimi krok w krok. Rozpoczyna się pasjonująca rozgrywka, w którą zostają zaangażowani duchowni i... cinkciarze. Każda ze stron ma asy w rękawie.
 		</p>
-        <p>Wcielasz się w działaczy Solidarności. Właśnie wyprowadziliście z banku 80 milionów i musicie je zabezpieczyć.</p>
-		</div>
+        <p style="font-name:Helvetica;color:#575757">Wcielasz się w działaczy Solidarności. Właśnie wyprowadziliście z banku 80 milionów i musicie je zabezpieczyć.<br>Powodzenia!<br><br></p>
 		</div>
 	]]></description>
     <title>80 milionów</title>
@@ -17,18 +17,23 @@
             <title>Zajezdnia tramwajowa</title>
 			<time_limit>0</time_limit>
 			<description><![CDATA[
-				<center><img src="http://www.wroclaw.pl/files/aglowna/aktualnosci_miejskie/450x0/zajezdnia%20002.jpg" width="200"></center><p>Służba Bezpieczeństwa będzie oczekiwać że kierujecie się z nimi do zajezdni tramwajowej na Biskupinie.</p>
+				<center><br><img src="http://s3.flog.pl/media/foto/3365828_ostrow-tumski--katedra--wroclaw.jpg" height="140"></center><p>Służba Bezpieczeństwa będzie oczekiwać że kierujecie się z nimi do zajezdni tramwajowej na Biskupinie.</p>
 				<p>Ukryjcie pieniądze u zaprzyjaźnionego duchownego na Ostrowie Tumskim i sprawcie niespodziankę SB!</p>
 			]]></description>
 			<events>
 				<event type="delayed_message">
 					<delay>10</delay>
 					<content><![CDATA[
-						Funkcjonariusze są na waszym tropie, macie niewiele czasu! 
+                        <center>
+                        <img src="http://s3.flog.pl/media/foto/2590124_milicja-obywatelska.jpg" width=290>
+                        <p style="color:white;font-size:20;">
+						Funkcjonariusze są na waszym tropie, macie niewiele czasu!</p>
+                        </center>
 					]]></content>
 				</event>
 			</events>
 			<target_location>
+                <title>Katedra, Ostrów Tumski</title>
 				<reach_event type="message">
 					<content><![CDATA[
 						Pieniądze są bezpieczne. Udajcie się do zajezdni.
