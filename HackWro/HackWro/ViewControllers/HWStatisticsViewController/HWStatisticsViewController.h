@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Scenario.h"
 
-@interface HWStatisticsViewController : UIViewController
+@interface HWStatisticsViewController : UITableViewController {
+    NSDictionary *objectives;
+}
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 @property (nonatomic, retain) IBOutlet UINavigationBar *myNaivgationBar;
@@ -17,9 +20,8 @@
 @property (nonatomic, retain) NSArray *myTimes;
 @property (nonatomic, retain) NSArray *myTasks;
 
-- (id) initWithObjectives:(NSArray*)Objectives;
+- (id) initWithObjectives:(NSDictionary*)Objectives;
 
-- (void) userFinishedTasks:(NSArray *)noTasks inTimes:(NSArray *)Times;
-- (void) goBack;
+- (void) userFinishedTasks:(Scenario *)task;
 
 @end

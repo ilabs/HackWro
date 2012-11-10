@@ -21,8 +21,9 @@
 @synthesize myTasks = _myTasks;
 @synthesize myTimes = _myTimes;
 
-- (id) initWithObjectives:(NSArray*)Objectives {
-    
+- (id) initWithObjectives:(NSDictionary*)Objectives {
+    objectives = Objectives;
+    return self;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -51,6 +52,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [objectives count];
 }
 
 @end
